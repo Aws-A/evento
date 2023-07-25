@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import LoginButton from './components/LoginButton';
+import LogoutButton from './components/LogoutButton';
 
 function App() {
   return (
@@ -9,6 +11,8 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <LoginButton/>
+        <LogoutButton/>
         <a
           className="App-link"
           href="https://reactjs.org"
