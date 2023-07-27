@@ -5,8 +5,9 @@ import LogoutButton from './components/LogoutButton';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import HeaderBar from './components/HeaderBar';
-import EventsPage from './components/eventsPage';
+import EventsPage from './components/EventsPage';
 import ProfilePage from './components/ProfilePage';
+import HomePage from './components/HomePage';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <LogoutButton />
         <EventsPage/>
         <ProfilePage/>
+        <HomePage/>
         </div>
 
         <Footer/>

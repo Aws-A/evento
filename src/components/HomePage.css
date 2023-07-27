@@ -1,0 +1,9 @@
+.eventPageCategory img {
+  width: 100px;
+  height: 100px;
+}
+
+.eventPageCategory {
+  display: flex;
+ justify-content:space-evenly
+}
