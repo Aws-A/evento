@@ -5,6 +5,8 @@ import LogoutButton from './components/LogoutButton';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import HeaderBar from './components/HeaderBar';
+import EventsPage from './components/eventsPage';
+import ProfilePage from './components/ProfilePage';
 
 function App() {
   return (
@@ -15,8 +17,10 @@ function App() {
         <div class = "mainContainer">
         <LoginButton />
         <LogoutButton />
+        <EventsPage/>
+        <ProfilePage/>
         </div>
-        
+
         <Footer/>
     </div>
   );
