@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+.navbarContainer {
+  display: flex;
+  justify-content:space-evenly
+}
+
+.header {
+  display: flex;
+  margin-left: 80px;
+}
