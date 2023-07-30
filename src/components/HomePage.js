@@ -20,7 +20,7 @@ const HomePage = ({onHomeChange}) => {
         <img
           src="/images/placeholder.png"
           alt="Events"
-          onClick={() => onHomeChange("events")}
+          onClick={() => onHomeChange("explore")}
         /> 
         <h1>
           Events
@@ -46,7 +46,7 @@ const HomePage = ({onHomeChange}) => {
       </div>
   
 
-      {currentPage === "events" && <EventsPage />}
+      {currentPage === "explore" && <EventsPage />}
       {currentPage === "groups" && <GroupsPage />}
       {currentPage === "communications" && <CommunicationsPage />}
     </>
