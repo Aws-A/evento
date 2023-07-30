@@ -9,8 +9,10 @@ const HomePage = () => {
 
   const handleItemClick = (page) => {
     setCurrentPage(page);
-    console.log(page)
+    // console.log(page)
   };
+
+  
 
   return (
     <>
