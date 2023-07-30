@@ -68,3 +68,21 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+### Database
+Create .env file inside the server folder and copy content from .env.example into .env
+fill in the necessary PostgreSQL configuration
+(  eg. 
+PORT=8080
+DB_HOST=localhost
+DB_USER=labber
+DB_PASSWORD=labber
+DB_DATABASE=meetupapp
+DB_PORT=5432
+)
+Go into psql
+Create a db ( CREATE DATABASE meetupapp; )
+Creat user ( CREATE USER labber WITH ENCRYPTED PASSWORD ‘labber’; )
+Granting access to user( GRANT ALL PRIVILEGES ON DATABASE meetuppapp TO labber;)
