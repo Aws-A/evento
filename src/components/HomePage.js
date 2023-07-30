@@ -4,26 +4,23 @@ import GroupsPage from "./GroupsPage"; // Import your GroupsPage component
 import CommunicationsPage from "./CommunicationsPage"; // Import your CommunicationsPage component
 import "./HomePage.css"
 
-const HomePage = () => {
+const HomePage = ({onHomeChange}) => {
   const [currentPage, setCurrentPage] = useState(null);
 
-  const handleItemClick = (page) => {
-    setCurrentPage(page);
-    // console.log(page)
-  };
+  
 
   
 
   return (
     <>
-      <h1>Home Page</h1>
+      {/* <h1>Home Page</h1> */}
       <h1>Explore</h1>
       <div className="eventPageCategory">
           <div className ="eventsButton">
         <img
           src="/images/placeholder.png"
           alt="Events"
-          onClick={() => handleItemClick("events")}
+          onClick={() => onHomeChange("events")}
         /> 
         <h1>
           Events
@@ -33,7 +30,7 @@ const HomePage = () => {
         <img
            src="/images/placeholder.png"
           alt="Groups"
-          onClick={() => handleItemClick("groups")}
+          onClick={() => onHomeChange("groups")}
         />
         <h1>Groups</h1>
         </div>
@@ -42,7 +39,7 @@ const HomePage = () => {
         <img
             src="/images/placeholder.png"
           alt="Communications"
-          onClick={() => handleItemClick("communications")}
+          onClick={() => onHomeChange("communications")}
         />
         <h1>Communications</h1>
         </div>

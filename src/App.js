@@ -8,24 +8,30 @@ import NavBar from './components/NavBar';
 import EventsPage from './components/EventsPage';
 import ProfilePage from './components/ProfilePage';
 import HomePage from './components/HomePage';
+import CommunicationsPage from './components/CommunicationsPage';
+import GroupsPage from './components/GroupsPage';
+import ContactUs from './components/ContactUs';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('homePage');
 
-  const handleNavChange = (page) => {
+  const handlePageChange = (page) => {
     setCurrentPage(page);
-    console.log ("UWU")
+    console.log ("HandlePageChange " + page)
   };
 
   return (
     <div className="App">
       <Header />
-      <NavBar onNavChange={handleNavChange} />
+      <NavBar onNavChange={handlePageChange} />
 
       <div className="mainContainer">
-        {currentPage === 'homePage' && <HomePage />}
+        {currentPage === 'homePage' && <HomePage onHomeChange={handlePageChange} />}
         {currentPage === 'explore' && <EventsPage />}
         {currentPage === 'profile' && <ProfilePage />}
+        {currentPage === 'communications' && <CommunicationsPage/>}
+        {currentPage === 'groups' && <GroupsPage/>}
+        {currentPage === 'contactUs' && <ContactUs/>}
         {/* {currentPage === 'contactUs' && <ContactUsPage />} */}
       </div>
 

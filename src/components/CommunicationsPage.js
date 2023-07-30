@@ -1,9 +1,7 @@
 const CommunicationsPage = () => {
 
   return (
-    <> 
-
-    </>
+    <h1>communications</h1>
    
   )
 }
