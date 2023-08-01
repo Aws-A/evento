@@ -6,7 +6,7 @@
 .eventPageCategory {
   display: flex;
  justify-content:space-evenly;
- margin: 2% 2% 2% 5%;
+ margin: 2% 2% 10% 5%;
 }
 
 .card {
@@ -32,4 +32,36 @@
   text-align: left;
   margin-left: 12.5%;
   color: #505050;
+}
+
+.hero {
+  display: flex;
+  font-size: 25px;
+  border-bottom: solid 3px #FF7557;
+  margin-bottom: 10%;
+}
+
+.para {
+  width: 60%;
+  background: linear-gradient(to right, #000000,#404040);
+  color: #F5F5F5;
+}
+
+.para h1 {
+  text-align: left;
+  margin-left: 12.5%;
+  font-family: kings;
+  font-weight: 300;
+  color: #FF7557;
+}
+
+.para p{
+  text-align: left;
+  margin-left: 13%;
+}
+
+
+
+.hero img{
+  width: 40%;
 }

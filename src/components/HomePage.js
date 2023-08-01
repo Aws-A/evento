@@ -14,6 +14,18 @@ const HomePage = ({onHomeChange}) => {
   return (
     <>
       {/* <h1>Home Page</h1> */}
+      <div class="hero">
+        <div class="para">
+          <h1> Event up with us </h1>
+          <p>
+          Platform for people with mutual interests to: <br/>
+          - Create and join groups <br/>
+          - Organize and attend events <br/>
+          - Communicate with each other
+          </p>
+        </div>
+        <img src="/images/heroImg.jpg"/>
+      </div>
       <h1 class="title">Explore</h1>
       <div className="eventPageCategory">
           <div className ="card eventsButton">
