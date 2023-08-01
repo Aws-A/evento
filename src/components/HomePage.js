@@ -16,7 +16,7 @@ const HomePage = ({onHomeChange}) => {
       {/* <h1>Home Page</h1> */}
       <h1>Explore</h1>
       <div className="eventPageCategory">
-          <div className ="eventsButton">
+          <div className ="card eventsButton">
         <img
           src="/images/placeholder.png"
           alt="Events"
@@ -26,7 +26,7 @@ const HomePage = ({onHomeChange}) => {
           Events
         </h1>
         </div>
-        <div className="groupsButton">
+        <div className="card groupsButton">
         <img
            src="/images/placeholder.png"
           alt="Groups"
@@ -35,7 +35,7 @@ const HomePage = ({onHomeChange}) => {
         <h1>Groups</h1>
         </div>
 
-        <div className="communicationButton">
+        <div className="card communicationButton">
         <img
             src="/images/placeholder.png"
           alt="Communications"
