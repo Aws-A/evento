@@ -14,7 +14,7 @@ const HomePage = ({onHomeChange}) => {
   return (
     <>
       {/* <h1>Home Page</h1> */}
-      <h1>Explore</h1>
+      <h1 class="title">Explore</h1>
       <div className="eventPageCategory">
           <div className ="card eventsButton">
         <img
