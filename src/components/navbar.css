@@ -5,7 +5,9 @@
 .navbarContainer {
   display: flex;
   justify-content:space-evenly;
-  border: 5px solid grey;
+  border: 5px solid #FF7557;
+  background-color: #F9F9F9;
+  color: #505050;
 }
 
 .header {
