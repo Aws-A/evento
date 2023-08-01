@@ -5,7 +5,7 @@
 .navbarContainer {
   display: flex;
   justify-content:space-evenly;
-  border: 5px solid #FF7557;
+  border: 1px 0px solid #FF7557;
   background-color: #F9F9F9;
   color: #505050;
   font-family: inter;
