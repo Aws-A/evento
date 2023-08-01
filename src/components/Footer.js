@@ -29,10 +29,10 @@ const Footer = () => {
       <div className="followUs">
       <h1>Follow Us</h1>
       <div className="socialMediaBar">
-      <img src="/images/placeholder.png"/>
-      <img src="/images/placeholder.png"/>
-      <img src="/images/placeholder.png"/>
-      <img src="/images/placeholder.png"/>
+      <img src="/images/facebookIcon.svg"/>
+      <img src="/images/twitterIcon.svg"/>
+      <img src="/images/youtubeIcon.svg"/>
+      <img src="/images/instagramIcon.svg"/>
       </div>
       </div>
 
