@@ -18,7 +18,7 @@ const HomePage = ({onHomeChange}) => {
       <div className="eventPageCategory">
           <div className ="card eventsButton">
         <img
-          src="/images/placeholder.png"
+          src="/images/eventImg.jpg"
           alt="Events"
           onClick={() => onHomeChange("explore")}
         /> 
@@ -28,7 +28,7 @@ const HomePage = ({onHomeChange}) => {
         </div>
         <div className="card groupsButton">
         <img
-           src="/images/placeholder.png"
+           src="/images/groupImg.jpg"
           alt="Groups"
           onClick={() => onHomeChange("groups")}
         />
@@ -37,7 +37,7 @@ const HomePage = ({onHomeChange}) => {
 
         <div className="card communicationButton">
         <img
-            src="/images/placeholder.png"
+            src="/images/communicateImg.jpg"
           alt="Communications"
           onClick={() => onHomeChange("communications")}
         />
