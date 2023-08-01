@@ -1,3 +1,14 @@
+.header{
+  height: 100px;
+}
+
+.header h1{
+  font-family: kings;
+  font-weight: 300;
+  font-size: 44px;
+  color: #FF7557;
+}
+
 .eventPageCategory img {
   width: 100px;
   height: 100px;
@@ -59,8 +70,6 @@
   text-align: left;
   margin-left: 13%;
 }
-
-
 
 .hero img{
   width: 40%;
