@@ -5,11 +5,11 @@
 .navbarContainer {
   display: flex;
   justify-content:space-evenly;
-  border: 2px solid #FF7557;
+  border: 1px solid #FF7557;
   border-width: 1px 0px;
   background-color: #F9F9F9;
   color: #505050;
-  font-family: inter;
+  font-family: poppins;
   font-size: 11px;
 }
 
@@ -20,7 +20,8 @@
 
 .footerBox {
   display:flex;
-  border: 5px solid grey;
+  border: 1px solid grey;
+  background-color: #F9F9F9;
   justify-content:space-evenly;
   padding: 5px;
 
