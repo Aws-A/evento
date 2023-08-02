@@ -1,0 +1,26 @@
+.ProfileEdits {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.ProfileEdits textarea {
+  width: 80%;
+  height: 80px;
+  resize: none;
+}
+
+
+.ProfileEdits h1 {
+  font-weight: bold;
+  margin: 0;
+}
+
+.ProfileEdits h2 {
+  margin: 0;
+}
+
+.ProfileEdits > div {
+  flex: 1 0 200px;
+  margin: 10px;
+}
