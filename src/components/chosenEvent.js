@@ -13,7 +13,7 @@ const chosenEvent = () => {
               </div>
             </div>
             <div class="info">
-              <p></p>
+              <p> Events </p>
               <p></p>
             </div>
           </div>
