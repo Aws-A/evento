@@ -29,6 +29,10 @@
   font-size: 12px;
 }
 
+/* .card :hover{
+  box-shadow: 2px 2px 4px #505050;
+} */
+
 .card h1{
   margin-top: 3%;
 }
@@ -54,6 +58,7 @@
 
 .para {
   width: 60%;
+  height: 378px;
   background: linear-gradient(to right, #000000,#404040);
   color: #F5F5F5;
 }

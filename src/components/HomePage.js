@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import EventsPage from "./EventsPage"; // Import your EventsPage component
 import GroupsPage from "./GroupsPage"; // Import your GroupsPage component
 import CommunicationsPage from "./CommunicationsPage"; // Import your CommunicationsPage component
-import "./HomePage.css"
+import "./HomePage.css";
 
 const HomePage = ({onHomeChange}) => {
   const [currentPage, setCurrentPage] = useState(null);
