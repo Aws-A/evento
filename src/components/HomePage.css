@@ -74,3 +74,8 @@
 .hero img{
   width: 40%;
 }
+
+.eventSearch {
+  display: flex;
+  margin-left: 20px;;
+}
