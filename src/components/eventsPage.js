@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const EventsPage= () => {
+const EventsPage= (props) => {
   const [eventSearchQuery, setEventSearchQuery] = useState("");
   const [eventSearchResults, setEventSearchResults] = useState([]);
 
@@ -63,6 +63,7 @@ const EventsPage= () => {
      <ul>
      Events (somehow use li key for each event thought this involves using db)
    </ul>
+   <div onClick={() => props.onHomeChange("chosenPage")}> Aws Temporary Link </div>
    </>
   
 

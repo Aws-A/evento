@@ -11,7 +11,7 @@ import HomePage from './components/HomePage';
 import CommunicationsPage from './components/CommunicationsPage';
 import GroupsPage from './components/GroupsPage';
 import ContactUs from './components/ContactUs';
-
+import ChosenEvent from './components/ChosenEvent';
 export default function App() {
   const [currentPage, setCurrentPage] = useState('homePage');
 
@@ -27,11 +27,12 @@ export default function App() {
 
       <div className="mainContainer">
         {currentPage === 'homePage' && <HomePage onHomeChange={handlePageChange} />}
-        {currentPage === 'explore' && <EventsPage />}
+        {currentPage === 'explore' && <EventsPage onHomeChange={handlePageChange}/>}
         {currentPage === 'profile' && <ProfilePage />}
         {currentPage === 'communications' && <CommunicationsPage/>}
         {currentPage === 'groups' && <GroupsPage/>}
         {currentPage === 'contactUs' && <ContactUs/>}
+        {currentPage === 'chosenPage' && <ChosenEvent/>}
         {/* {currentPage === 'contactUs' && <ContactUsPage />} */}
       </div>
 
