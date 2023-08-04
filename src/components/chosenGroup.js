@@ -33,6 +33,11 @@ const ChosenGroup = () => {
                 <img src="/images/memo2.jpg"/>
                 <img src="/images/memo3.jpg"/>
               </div>
+              <div class="photos">
+                <img src="/images/memo4.jpg"/>
+                <img src="/images/memo5.jpg"/>
+                <img src="/images/memo6.jpg"/>
+              </div>
           </div>
         </div>
         <div class="eventsContentGr">
