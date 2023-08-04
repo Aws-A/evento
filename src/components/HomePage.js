@@ -38,22 +38,22 @@ const HomePage = ({onHomeChange}) => {
           Events
         </h1>
         </div>
-        <div className="card groupsButton">
-        <img
+        <div className="card">
+          <img
            src="/images/groupImg.jpg"
           alt="Groups"
           onClick={() => onHomeChange("groups")}
-        />
-        <h1>Groups</h1>
+          />
+          <h1>Groups</h1>
         </div>
 
         <div className="card communicationButton">
-        <img
+          <img
             src="/images/communicateImg.jpg"
           alt="Communications"
           onClick={() => onHomeChange("communications")}
-        />
-        <h1>Communications</h1>
+          />
+          <h1>Communications</h1>
         </div>
       </div>
   

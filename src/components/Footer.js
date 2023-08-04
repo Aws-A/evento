@@ -5,20 +5,20 @@ const Footer = () => {
 
   return (
     <div className="footerBox">
-      <div className="footerAboutUs">
+      <div className="footerAboutUs footerElement">
       <h1>About Us</h1>
       <h3>Our Team</h3>
       <h3>Our Story</h3>
       </div>
 
-      <div className="footerExplore">
+      <div className="footerExplore footerElement">
       <h1>Explore</h1>
       <h3>Interests</h3>
       <h3>Events</h3>
       <h3>Groups</h3>
       </div>
 
-      <div className="footerProfile">
+      <div className="footerProfile footerElement">
       <h1>My Profile</h1>
       <h3>Settings</h3>
       <h3>Sign Up/In</h3>
@@ -26,7 +26,7 @@ const Footer = () => {
       </div>
 
 
-      <div className="followUs">
+      <div className="followUs footerElement">
       <h1>Follow Us</h1>
       <div className="socialMediaBar">
       <img src="/images/facebookIcon.svg"/>
