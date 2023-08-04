@@ -5,7 +5,7 @@ import { useState } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import NavBar from './components/NavBar';
-import EventsPage from './components/EventsPage';
+import EventsPage from './components/eventsPage';
 import ProfilePage from './components/ProfilePage';
 import HomePage from './components/HomePage';
 import CommunicationsPage from './components/CommunicationsPage';
