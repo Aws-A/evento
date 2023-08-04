@@ -26,15 +26,22 @@ const ChosenEvent = () => {
               </div>
             </div>
           </div>
+          <hr></hr>
           <div class="otherEvents">
-            <h1> Coming Events </h1>
-            <h1> Past Events </h1>
+            <div class="allEvents">
+              <div class="newEvent">
+                <h1> Coming Events </h1>
+              </div>
+              <div class="pastEvent">
+                <h2> Past Events </h2>
+              </div>
+            </div>
             <p> Beach Volleyball (Public) </p>
-            <div class="date"></div>
+            <div class="date"> Sunday 30/7/2023 </div>
             <p> Beach Volleyball (Public) </p>
-            <div class="date"></div>
+            <div class="date"> Thursday 3/8/2023</div>
             <p> Beach Volleyball (Public) </p>
-            <div class="date"></div>
+            <div class="date"> Friday 4/8/2023 </div>
           </div>
         </div>
         <div class="groupContent">

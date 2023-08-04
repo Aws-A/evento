@@ -1,0 +1,69 @@
+.contentGr {
+  display: flex;
+  margin: 5%;
+  text-align: left;
+}
+.groupContentGr {
+  width: 66%;
+  margin-left: 9%;
+}
+
+
+.eventsContentGr {
+  width: 33%;
+  border-left: 1px solid #FF7557;
+  padding-left: 2%;
+}
+
+.frontGr {
+  display: flex;
+}
+
+.contentGr h1 {
+  font-size: 22px;
+  color: #FF7557;
+}
+
+.contentGr p {
+  font-size: 17px;
+  color: black;
+}
+
+.contentGr img {
+    width: 30%;
+    height: 50%;
+    border-radius: 15px;
+}
+
+.byImgGr {
+  margin-left: 5%;
+  margin-top: -2%;
+}
+
+.eventsContentGr img{
+  width: 80%;
+  height: 20%;
+}
+
+.photosSection {
+  margin-top: 10%;
+}
+
+.photos {
+  display: flex;
+  margin-left: -3%;
+}
+
+.photos img{
+  width: 25%;
+  height: 8%;
+  margin: 2%;
+}
+
+.contentGr hr{
+  display: block;
+  height: 2px;
+  width: 50%;
+  border: 0;
+  border-top: 1px solid #FF7557;
+}

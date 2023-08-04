@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./groups.css"
 
-const GroupsPage = () => {
+const GroupsPage = (props) => {
 
   return (
     <> 
@@ -10,6 +10,7 @@ const GroupsPage = () => {
         <div> </div>
         <div> </div>
       </div>
+      <div onClick={() => props.onHomeChange("chosenPageGr")}> Aws Temporary Link </div>
     </>
    
   )
