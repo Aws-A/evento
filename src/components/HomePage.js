@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import EventsPage from "./eventsPage";
+import EventsPage from "./EventsPage";
 import GroupsPage from "./GroupsPage"; 
 import CommunicationsPage from "./CommunicationsPage"; 
 import "./HomePage.css";
