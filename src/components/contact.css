@@ -1,0 +1,37 @@
+.team {
+  display: flex;
+  margin-bottom: 5%;
+}
+
+.team img{
+  width: 50%;
+}
+
+.team h3{
+  font-size: 25px;
+  color: #FF7557;
+}
+
+.team p{
+  font-size: 22px;
+  color: black;
+}
+
+.warda {
+  margin-top: 15%;
+}
+
+.socialMedia {
+  display: flex;
+  justify-content: center;
+}
+
+.titleCon {
+  font-size: 30px;
+  color: #FF7557;
+}
+
+.socialMedia img{
+  width: 3%;
+  margin: 2% 5% 5% 5%;
+}
