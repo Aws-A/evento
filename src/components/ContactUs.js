@@ -5,10 +5,11 @@ const ContactUs = () => {
   return (
     <> 
     <h1>Contact Us</h1>
+    <img src="/images/line.png" class="curve"/>
     <div class="team">
       <div class="william">
-        <h3> William Vo</h3>
         <img src="/images/William.svg"/>
+        <h3> William Vo</h3>
         <p> williamvo@gmail.com </p>
         <p> 6477777777 </p>
       </div>
@@ -19,8 +20,8 @@ const ContactUs = () => {
         <img src="/images/Warda.svg"/>
       </div>
       <div class="aws">
-        <h3> Aws Al-Raheem </h3>
         <img src="/images/Aws.svg"/>
+        <h3> Aws Al-Raheem </h3>
         <p>  awsalrahim@gmail.com </p>
         <p> 6477777777 </p>
       </div>
