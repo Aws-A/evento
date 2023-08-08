@@ -11,18 +11,19 @@ const ChosenEvent = () => {
               <img src="/images/beachVolleyball.jpg"/>
               <div class="byImg">
                 <h1> Beach Volleyball (Public) </h1>
-                <p> Join us in fun games </p>
-                <p> Levels: Beginners, Intermediate, Advanced </p>
+                <p> <b> Join us in fun games </b> </p>
+                <p> <b> Levels: </b> Beginners, Intermediate, Advanced </p>
               </div>
             </div>
             <div class="info">
               <div class="left">
-                <p>Location: Woodbine Beach, Ashbridges Bay </p>
-                <p> Time: Saturday, 29/7/2023 </p>
+                <p><b> Location: </b> Woodbine Beach, Ashbridges Bay </p>
+                <p> <b>Date:</b> Saturday, 29/7/2023 </p>
+                <p> <b>Time:</b> 12 P.M </p>
               </div>
               <div class="right">
-                <p> Price: Free </p>
-                <p> Requirements: Beach Suit </p>
+                <p> <b>Price:</b> Free </p>
+                <p> <b>Requirements: </b> Beach Suit </p>
               </div>
             </div>
           </div>
@@ -52,9 +53,9 @@ const ChosenEvent = () => {
               Indoor Volleyball <br/>
               Grass Volleyball<br/>
               <br/>
-              Number of Members:  752 <br/>
+              <b> Number of Members:</b>  752 <br/>
               <br/>
-              Created : 2017
+              <b> Year Created: </b> 2017
           </p>
         </div>
       </div>

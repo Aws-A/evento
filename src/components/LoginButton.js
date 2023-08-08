@@ -15,7 +15,7 @@ const LoginButton = () => {
 
 
   return (
-    <button onClick={handleLogin}>
+    <button onClick={handleLogin} class="log">
       Log In
     </button>
   );

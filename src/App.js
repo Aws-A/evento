@@ -61,8 +61,8 @@ export default function App() {
       </div>
 
       <Footer />
-      <LoginButton />
-      <LogoutButton />
+      {/* <LoginButton />
+      <LogoutButton /> */}
     </div>
   );
 }
