@@ -12,14 +12,17 @@ const ProfilePage = () => {
     return (
       <>
         <h1>Profile</h1>
+        <div class="top">
         {user.picture && (
           <img
             src={user.picture}
             alt="Profile Picture"
             style={{ width: "100px", height: "100px", borderRadius: "50%" }}
+            class="profileImg"
           />
         )}
         <button>Upload Profile Picture</button>
+        </div>
         <div className="ProfileEdits">
           <div>
             <h1>First Name</h1>
@@ -38,7 +41,7 @@ const ProfilePage = () => {
             <textarea placeholder="Enter your email here" value={user.email} readOnly />
           </div>
         </div>
-        <button>Save Changes</button>
+        <button class="SV">Save Changes</button>
       </>
     );
   } else {

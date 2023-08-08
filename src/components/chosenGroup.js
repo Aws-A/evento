@@ -16,8 +16,8 @@ const ChosenGroup = () => {
             </div>
             <div class="infoGr">
               <div class="leftGr">
-                <p>Number of Members:  361 </p>
-                <p> Created : 2020 </p>
+                <p><b>Number of Members:</b> 361 </p>
+                <p> <b>Year Created:</b> 2020 </p>
               </div>
               <div class="rightGr">
                 <p> </p>
@@ -43,15 +43,15 @@ const ChosenGroup = () => {
         <div class="eventsContentGr">
         <img src="/images/dineEvent1.jpg"/>
           <h1>Dinning Out (Private) </h1>
-          <p> Location: Lupo Restaurant & Vinoteca 869 Hamilton St, Vancouver, BC V6B 2R7 <br/>
-          Date: Friday, 5/8/2023 <br/>
-          Time: 5:00 PM<br/>
+          <p> <b>Location:</b> Lupo Restaurant & Vinoteca 869 Hamilton St, Vancouver, BC V6B 2R7 <br/>
+          <b>Date:</b> Friday, 5/8/2023 <br/>
+          <b>Time:</b> 5:00 PM<br/>
           </p>
           <img src="/images/dineEvent2.jpg"/>
           <h1>Asian Food </h1>
-          <p> Location: 1132 E Hastings St, Vancouver, BC V6A 1S2 <br/>
-          Date: Sunday, 7/8/2023<br/>
-          Time: 3:00 PM<br/>
+          <p> <b>Location:</b> 1132 E Hastings St, Vancouver, BC V6A 1S2 <br/>
+          <b>Date:</b> Sunday, 7/8/2023<br/>
+          <b>Time:</b> 3:00 PM<br/>
           </p>
         </div>
       </div>

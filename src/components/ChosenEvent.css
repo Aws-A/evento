@@ -19,6 +19,10 @@
   display: flex;
 }
 
+.info {
+  margin-bottom: 7%;
+}
+
 .content h1 {
   font-size: 22px;
   color: #FF7557;
@@ -80,4 +84,8 @@ h2 {
 .pastEvent {
   border-bottom: 1px solid #505050;
   width: 35%;
+}
+
+b {
+  color: #505050;
 }
