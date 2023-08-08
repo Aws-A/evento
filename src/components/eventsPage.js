@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+
 
 const EventsPage= (props) => {
   const [eventSearchQuery, setEventSearchQuery] = useState("");
@@ -9,6 +11,22 @@ const EventsPage= (props) => {
 
   const [interestSearchQuery, setInterestSearchQuery] = useState("");
   const [interestSearchResults, setInterestSearchResults] = useState([]);
+
+  const [events, setEvents] = useState([]);
+
+
+  useEffect(() => {
+  axios.get('http://localhost:8080/events')
+  .then(console.log("TESTING EVENT PAGE"))
+  .then(response => {
+    console.log(response.data)
+    setEvents(response.data)
+  })
+  .catch(error => {
+    console.error('Error fetching test data: couldnt get to events', error);
+  });
+}, []);
+
 
   return (
     <>
@@ -61,8 +79,17 @@ const EventsPage= (props) => {
       </div>
     </div>
      <ul>
-     Events (somehow use li key for each event thought this involves using db)
+     {events.map((event) => (
+            <li key={event.eventid}>{event.eventname}</li>
+          ))}
+     Events (somehow use li key for each event thought this involves using db) 
    </ul>
+ 
+
+
+
+
+   
    <div onClick={() => props.onHomeChange("chosenPage")}> Aws Temporary Link </div>
    </>
   

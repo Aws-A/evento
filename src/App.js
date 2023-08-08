@@ -24,11 +24,11 @@ export default function App() {
     console.log ("HandlePageChange " + page)
   };
 
-  const [testData, setTestData] = useState('');
-
   const [data, setData] = useState([]);
+
+  //to test if backends connected
+  const [testData, setTestData] = useState('');
   useEffect(() => {
-  
     axios.get('http://localhost:8080/test')
       .then(response => {
         setTestData(response.data);
