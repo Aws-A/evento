@@ -21,7 +21,7 @@ const ProfilePage = () => {
             class="profileImg"
           />
         )}
-        <button>Upload Profile Picture</button>
+        <button class="btn">Upload Profile Picture</button>
         </div>
         <div className="ProfileEdits">
           <div>
@@ -41,7 +41,7 @@ const ProfilePage = () => {
             <textarea placeholder="Enter your email here" value={user.email} readOnly />
           </div>
         </div>
-        <button class="SV">Save Changes</button>
+        <button class="btn">Save Changes</button>
       </>
     );
   } else {
