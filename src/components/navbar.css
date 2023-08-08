@@ -44,6 +44,7 @@
 .footerBox {
   display:flex;
   border: 1px solid grey;
+  border-width: 1px 0px;
   background-color: #F9F9F9;
   justify-content:space-evenly;
   padding: 5px;
