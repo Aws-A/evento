@@ -1,7 +1,8 @@
 import './App.css';
 import LoginButton from './components/LoginButton';
 import LogoutButton from './components/LogoutButton';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import NavBar from './components/NavBar';
@@ -13,6 +14,8 @@ import GroupsPage from './components/GroupsPage';
 import ContactUs from './components/ContactUs';
 import ChosenEvent from './components/ChosenEvent';
 import ChosenGroup from './components/ChosenGroup';
+
+
 export default function App() {
   const [currentPage, setCurrentPage] = useState('homePage');
 
@@ -21,12 +24,31 @@ export default function App() {
     console.log ("HandlePageChange " + page)
   };
 
+  const [testData, setTestData] = useState('');
+
+  const [data, setData] = useState([]);
+  useEffect(() => {
+  
+    axios.get('http://localhost:8080/test')
+      .then(response => {
+        setTestData(response.data);
+        console.log(response.data)
+      })
+      .catch(error => {
+        console.error('Error fetching test data:', error);
+      });
+  }, []);
+
+
+  
+
   return (
     <div className="App">
       <Header />
       <NavBar onNavChange={handlePageChange} />
 
       <div className="mainContainer">
+        <div>{testData} </div>
         {currentPage === 'homePage' && <HomePage onHomeChange={handlePageChange} />}
         {currentPage === 'explore' && <EventsPage onHomeChange={handlePageChange}/>}
         {currentPage === 'profile' && <ProfilePage />}
