@@ -7,11 +7,6 @@ const EventsPage= (props) => {
   const [eventSearchQuery, setEventSearchQuery] = useState("");
   const [eventSearchResults, setEventSearchResults] = useState([]);
 
-  const [groupSearchQuery, setGroupSearchQuery] = useState("");
-  const [groupSearchResults, setGroupSearchResults] = useState([]);
-
-  const [interestSearchQuery, setInterestSearchQuery] = useState("");
-  const [interestSearchResults, setInterestSearchResults] = useState([]);
 
   const [events, setEvents] = useState([]);
   // const [chosenEvent, setChosenEvent] = useState(null)
@@ -29,12 +24,19 @@ const EventsPage= (props) => {
   });
 }, []);
 
+useEffect(() => {
+  // Filter events based on search query
+  const filteredEvents = events.filter(event =>
+    event.eventname.toLowerCase().includes(eventSearchQuery.toLowerCase()) ||
+    event.eventlocation.toLowerCase().includes(eventSearchQuery.toLowerCase()) ||
+    event.eventdescription.toLowerCase().includes(eventSearchQuery.toLowerCase())
+  );
+  setEventSearchResults(filteredEvents);
+}, [eventSearchQuery, events]);
+
 
 const handleEventClick = (selectedEvent) => {
   props.onHomeChange("chosenPage", selectedEvent)
-  // setEventSearchQuery("")
-  // setEventSearchResults([])
-  // setSelectedEvent(event); // Sets a event when an event is clicked
 };
 
 
@@ -50,48 +52,17 @@ const handleEventClick = (selectedEvent) => {
           onChange={(e) => setEventSearchQuery(e.target.value)}
           placeholder="Search events..."
         />
-        {/* Display event search results */}
-        <ul>
-          {eventSearchResults.map((result) => (
-            <li key={result.id}>{result.name}</li>
-          ))}
-        </ul>
+       
+    
       </div>
       <div>
-        {/* <h2>Groups</h2> */}
-        <input
-          type="text"
-          value={groupSearchQuery}
-          onChange={(e) => setGroupSearchQuery(e.target.value)}
-          placeholder="Search groups..."
-        />
-        {/* Display group search results */}
-        <ul>
-          {groupSearchResults.map((result) => (
-            <li key={result.id}>{result.name}</li>
-          ))}
-        </ul>
-      </div>
-      <div>
-        {/* <h2>Interests</h2> */}
-        <input
-          type="text"
-          value={interestSearchQuery}
-          onChange={(e) => setInterestSearchQuery(e.target.value)}
-          placeholder="Search interests..."
-        />
-        {/* Display interest search results */}
-        <ul>
-          {interestSearchResults.map((result) => (
-            <li key={result.id}>{result.name}</li>
-          ))}
-        </ul>
+      
       </div>
     </div>
 
 
       <ul>
-      {events.map((selectedEvent, index) => (
+      {eventSearchResults.map((selectedEvent, index) => (
         <li
           key={index}
           className="event-box"
