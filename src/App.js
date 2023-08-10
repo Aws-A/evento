@@ -33,7 +33,7 @@ export default function App() {
   useEffect(() => {
     axios.get('http://localhost:8080/test')
       .then(response => {
-        setTestData(response.data);
+        setTestData(response.data +"this shows backend is online for now");
         console.log(response.data)
       })
       .catch(error => {

@@ -98,6 +98,9 @@ const handleEventClick = (selectedEvent) => {
           onClick={() => handleEventClick(selectedEvent)}
         >
           <strong>{selectedEvent.eventname}</strong>
+          <p>{selectedEvent.eventdescription}</p>
+      <p>{selectedEvent.eventlocation}</p>
+      <p>{selectedEvent.eventdate}</p>
         </li>
       ))}
     </ul>
