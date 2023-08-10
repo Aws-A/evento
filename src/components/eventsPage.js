@@ -14,6 +14,7 @@ const EventsPage= (props) => {
   const [interestSearchResults, setInterestSearchResults] = useState([]);
 
   const [events, setEvents] = useState([]);
+  // const [chosenEvent, setChosenEvent] = useState(null)
 
 
   useEffect(() => {
@@ -27,6 +28,14 @@ const EventsPage= (props) => {
     console.error('Error fetching test data: couldnt get to events', error);
   });
 }, []);
+
+
+const handleEventClick = (selectedEvent) => {
+  props.onHomeChange("chosenPage", selectedEvent)
+  // setEventSearchQuery("")
+  // setEventSearchResults([])
+  // setSelectedEvent(event); // Sets a event when an event is clicked
+};
 
 
   return (
@@ -80,23 +89,18 @@ const EventsPage= (props) => {
       </div>
     </div>
 
-    
-    <ul>
-        {events.map((event, index) => (
-          <li key={index} className="event-box">
-            {/* <strong>Event {index + 1}</strong> */}
-            <ul>
-              {Object.entries(event).map(([key, value]) => (
-                key !== 'eventid' && key !== 'organizerid' && (
-                  <li key={key}>
-                    <strong>{key}:</strong> {value}
-                  </li>
-                )
-              ))}
-            </ul>
-          </li>
-        ))}
-      </ul>
+
+      <ul>
+      {events.map((selectedEvent, index) => (
+        <li
+          key={index}
+          className="event-box"
+          onClick={() => handleEventClick(selectedEvent)}
+        >
+          <strong>{selectedEvent.eventname}</strong>
+        </li>
+      ))}
+    </ul>
          
 
 

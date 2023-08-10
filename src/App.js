@@ -18,10 +18,12 @@ import ChosenGroup from './components/ChosenGroup';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('homePage');
+  const [selectedEvent, setSelectedEvent] = useState(null);
 
-  const handlePageChange = (page) => {
+  const handlePageChange = (page, event) => {
     setCurrentPage(page);
-    console.log ("HandlePageChange " + page)
+    setSelectedEvent(event);
+    console.log("HandlePageChange " + page, event);
   };
 
   const [data, setData] = useState([]);
@@ -55,8 +57,11 @@ export default function App() {
         {currentPage === 'communications' && <CommunicationsPage/>}
         {currentPage === 'groups' && <GroupsPage onHomeChange={handlePageChange}/>}
         {currentPage === 'contactUs' && <ContactUs/>}
-        {currentPage === 'chosenPage' && <ChosenEvent/>}
+        {/* {currentPage === 'chosenPage' && <ChosenEvent/>} */}
         {currentPage === 'chosenPageGr' && <ChosenGroup/>}
+        {currentPage === 'chosenPage' && selectedEvent && (
+          <ChosenEvent event={selectedEvent} />
+        )}
         {/* {currentPage === 'contactUs' && <ContactUsPage />} */}
       </div>
 

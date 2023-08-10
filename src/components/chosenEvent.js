@@ -1,6 +1,6 @@
 import "./ChosenEvent.css";
 
-const ChosenEvent = () => {
+const ChosenEvent = ({event}) => {
 
   return (
     <> 
