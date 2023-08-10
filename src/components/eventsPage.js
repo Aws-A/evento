@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import './EventsPage.css'
 
 
 const EventsPage= (props) => {
@@ -78,13 +79,25 @@ const EventsPage= (props) => {
         </ul>
       </div>
     </div>
-     <ul>
-     {events.map((event) => (
-            <li key={event.eventid}>{event.eventname}</li>
-          ))}
-     Events (somehow use li key for each event thought this involves using db) 
-   </ul>
- 
+
+    
+    <ul>
+        {events.map((event, index) => (
+          <li key={index} className="event-box">
+            {/* <strong>Event {index + 1}</strong> */}
+            <ul>
+              {Object.entries(event).map(([key, value]) => (
+                key !== 'eventid' && key !== 'organizerid' && (
+                  <li key={key}>
+                    <strong>{key}:</strong> {value}
+                  </li>
+                )
+              ))}
+            </ul>
+          </li>
+        ))}
+      </ul>
+         
 
 
 
