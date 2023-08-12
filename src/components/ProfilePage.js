@@ -6,12 +6,13 @@ import "./ProfilePage.css";
 const ProfilePage = () => {
   const { user, isAuthenticated } = useAuth0();
   if (isAuthenticated && user) {
-    const { name, email } = user;
-    console.log(user.data);
+    // const { name, email } = user;
+   
 
     return (
       <>
         <h1>Profile</h1>
+        
         <div class="top">
         {user.picture && (
           <img

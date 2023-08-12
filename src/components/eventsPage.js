@@ -16,7 +16,7 @@ const EventsPage= (props) => {
   axios.get('http://localhost:8080/events')
   .then(console.log("TESTING EVENT PAGE"))
   .then(response => {
-    console.log(response.data)
+    // console.log(response.data)
     setEvents(response.data)
   })
   .catch(error => {

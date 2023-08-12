@@ -10,6 +10,7 @@ import EventsPage from './components/EventsPage';
 import ProfilePage from './components/ProfilePage';
 import HomePage from './components/HomePage';
 import CommunicationsPage from './components/CommunicationsPage';
+import { useAuth0 } from "@auth0/auth0-react";
 import GroupsPage from './components/GroupsPage';
 import ContactUs from './components/ContactUs';
 import ChosenEvent from './components/ChosenEvent';
@@ -28,19 +29,13 @@ export default function App() {
 
   const [data, setData] = useState([]);
 
-  //to test if backends connected
-  const [testData, setTestData] = useState('');
-  useEffect(() => {
-    axios.get('http://localhost:8080/test')
-      .then(response => {
-        setTestData(response.data +"this shows backend is online for now");
-        console.log(response.data)
-      })
-      .catch(error => {
-        console.error('Error fetching test data:', error);
-      });
-  }, []);
-
+  const { user, isAuthenticated } = useAuth0();
+  if (isAuthenticated && user) {
+    // const { name, email } = user;
+    console.log(user);
+    // console.log("User nickname:", user.nickname);
+  }
+   
 
   
 
@@ -50,7 +45,7 @@ export default function App() {
       <NavBar onNavChange={handlePageChange} />
 
       <div className="mainContainer">
-        <div>{testData} </div>
+      
         {currentPage === 'homePage' && <HomePage onHomeChange={handlePageChange} />}
         {currentPage === 'explore' && <EventsPage onHomeChange={handlePageChange}/>}
         {currentPage === 'profile' && <ProfilePage />}
