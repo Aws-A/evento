@@ -4,41 +4,50 @@ import axios from "axios";
 
 const LoginButton = () => {
   const { loginWithRedirect, user, isAuthenticated } = useAuth0();
-  const [nameExists, setNameExists] = useState(false); // New state to track name existence
+  const [nameExists, setNameExists] = useState(false); // Initialize with false
 
   useEffect(() => {
-    const checkNameExists = async () => {
-      if (isAuthenticated && user) {
-        const { given_name, family_name } = user;
+    if (isAuthenticated && user) {
+      const { given_name, family_name } = user;
 
-        try {
-          const response = await axios.get(`http://localhost:8080/user/names`);
-          const names = response.data;
-
-          const exists = names.some(n => n === `${given_name} ${family_name}`);
+      axios.get(`http://localhost:8080/user/names`)
+        .then(response => {
+          const names = response.data.map(nameObj => nameObj.fullname);
+          console.log("Backend response:", names);
+         
+          console.log("Given Name:", given_name);
+          console.log("Family Name:", family_name);
+          const fullName = `${given_name} ${family_name}`;
+          const exists = names.includes(fullName) || names.includes(user.name);
+  
           setNameExists(exists); // Update the state with the result
+          console.log (exists)
 
-          if (!exists) {
+          if (exists) {
+            console.log("User's name already exists and is in the DB");
+          } else {
             console.log("User's name does not exist, creating new user");
             const placeholderEmail = `${given_name}.${family_name}@hotmail.com`;
-            const addUserResponse = await axios.post(`http://localhost:8080/user/users`, {
+            axios.post(`http://localhost:8080/user/users`, {
               firstName: given_name,
               lastName: family_name,
               email: placeholderEmail,
               password: "password"
+            })
+            .then(response => {
+              console.log("User added:", response.data);
+            })
+            .catch(error => {
+              console.error("Error adding user:", error);
             });
-            console.log("User added:", addUserResponse.data);
-          } else {
-            console.log("User's name already exists and is in the DB");
           }
-        } catch (error) {
-          console.error("Error:", error);
-        }
-      }
-    };
+        })
+        .catch(error => {
+          console.error("Error checking user's name:", error);
+        });
+    }
+  }, [isAuthenticated, user, nameExists]);
 
-    checkNameExists();
-  }, [isAuthenticated, user]);
 
   const handleLogin = () => {
     loginWithRedirect({
