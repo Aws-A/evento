@@ -1,13 +1,34 @@
 // ProfilePage.js
-import React from "react";
+import React, {useState} from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import "./ProfilePage.css";
+import axios from "axios";
 
 const ProfilePage = () => {
   const { user, isAuthenticated } = useAuth0();
+  const [phoneNumber, setPhoneNumber] = useState(""); 
+    const [email, setEmail] = useState(""); 
+
+
   if (isAuthenticated && user) {
-    // const { name, email } = user;
    
+
+    const handleSaveChanges = () => {
+      axios
+        .post("http://localhost:8080/update-profile", {
+          // userId: user.userId,
+          fullName: `${user.given_name} ${user.family_name}`,
+          email,
+          phoneNumber,
+        })
+        .then((response) => {
+          console.log("Changes saved:", response.data);
+        })
+        .catch((error) => {
+          console.error("Error saving changes:", error);
+        });
+    };
+    
 
     return (
       <>
@@ -22,7 +43,7 @@ const ProfilePage = () => {
             class="profileImg"
           />
         )}
-        <button class="btn">Upload Profile Picture</button>
+        {/* <button class="btn">Upload Profile Picture</button> */}
         </div>
         <div className="ProfileEdits">
           <div>
@@ -35,14 +56,22 @@ const ProfilePage = () => {
           </div>
           <div>
             <h1>Phone Number</h1>
-            <textarea placeholder="Enter your phone number here" />
+            <textarea placeholder="Enter your phone number here" 
+             value={phoneNumber}
+             onChange={(e) => setPhoneNumber(e.target.value)}
+             />
           </div>
           <div>
             <h1>Email</h1>
-            <textarea placeholder="Enter your email here" value={user.email} readOnly />
+            <textarea placeholder="Enter your email here" 
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+             />
           </div>
         </div>
-        <button class="btn">Save Changes</button>
+        <button className="btn" onClick={handleSaveChanges}>
+  Save Changes
+</button>
       </>
     );
   } else {
