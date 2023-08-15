@@ -15,6 +15,7 @@ import GroupsPage from './components/GroupsPage';
 import ContactUs from './components/ContactUs';
 import ChosenEvent from './components/ChosenEvent';
 import ChosenGroup from './components/ChosenGroup';
+import CreateEvent from './components/CreateEvent';
 
 
 export default function App() {
@@ -24,7 +25,7 @@ export default function App() {
   const handlePageChange = (page, event) => {
     setCurrentPage(page);
     setSelectedEvent(event);
-    console.log("HandlePageChange " + page, event);
+    // console.log("HandlePageChange " + page, event);
   };
 
   const [data, setData] = useState([]);
@@ -32,7 +33,7 @@ export default function App() {
   const { user, isAuthenticated } = useAuth0();
   if (isAuthenticated && user) {
     // const { name, email } = user;
-    console.log(user);
+    // console.log(user);
     // console.log("User nickname:", user.nickname);
   }
    
@@ -54,6 +55,7 @@ export default function App() {
         {currentPage === 'contactUs' && <ContactUs/>}
         {/* {currentPage === 'chosenPage' && <ChosenEvent/>} */}
         {currentPage === 'chosenPageGr' && <ChosenGroup/>}
+        {currentPage === 'createEvent' && <CreateEvent/>}
         {currentPage === 'chosenPage' && selectedEvent && (
           <ChosenEvent event={selectedEvent} />
         )}
