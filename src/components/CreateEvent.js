@@ -20,13 +20,15 @@ const CreateEvent = () => {
     axios.post("http://localhost:8080/createEvents", newEvent)
     .then(response => {
       console.log("Event created:", response.data);
-      // Optionally, reset form fields or navigate to another page
     })
     .catch(error => {
-      console.log(newEvent)
-      console.error("Error creating event:", error);
+      if (error.response) {
+        console.error("Error creating event:", error.response.data);
+      } else {
+        console.error("Error creating event:", error.message);
+      }
     });
-
+  
 };
 
 
