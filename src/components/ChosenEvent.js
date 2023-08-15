@@ -23,7 +23,7 @@ const ChosenEvent = ({event}) => {
               </div>
               <div class="right">
                 <p> <b>Price:</b> Free </p>
-                <p> <b>Requirements: </b> Beach Suit </p>
+                {/* <p> <b>Requirements: </b> Beach Suit </p> */}
               </div>
             </div>
           </div>
@@ -53,9 +53,9 @@ const ChosenEvent = ({event}) => {
               Indoor Volleyball <br/>
               Grass Volleyball<br/>
               <br/>
-              <b> Number of Members:</b>  752 <br/>
+              {/* <b> Number of Members:</b>  752 <br/> */}
               <br/>
-              <b> Year Created: </b> 2017
+              {/* <b> Year Created: </b> 2017 */}
           </p>
         </div>
       </div>

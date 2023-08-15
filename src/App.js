@@ -16,6 +16,7 @@ import ContactUs from './components/ContactUs';
 import ChosenEvent from './components/ChosenEvent';
 import ChosenGroup from './components/ChosenGroup';
 import CreateEvent from './components/CreateEvent';
+import CreateGroup from './components/CreateGroup';
 
 
 export default function App() {
@@ -56,6 +57,7 @@ export default function App() {
         {/* {currentPage === 'chosenPage' && <ChosenEvent/>} */}
         {currentPage === 'chosenPageGr' && <ChosenGroup/>}
         {currentPage === 'createEvent' && <CreateEvent onHomeChange/>}
+        {currentPage === 'createGroup' && <CreateGroup onHomeChange/>}
         {currentPage === 'chosenPage' && selectedEvent && (
           <ChosenEvent event={selectedEvent} />
         )}

@@ -9,6 +9,15 @@ const GroupsPage = (props) => {
   const [groupSearchQuery, setGroupSearchQuery] = useState("");
   const [groupSearchResults, setGroupSearchResults] = useState([]);
   const [groups, setGroups] = useState([]);
+  const [showCreateGroup, setShowCreateGroup] = useState(false);
+
+  const handleCreateGroupClick = () => {
+    setShowCreateGroup(true);
+    console.log ("TESTING CREATE Group")
+
+    props.onHomeChange("createGroup"); // Set currentPage to 'createEvent'
+  };
+
 
   useEffect(() => {
     axios.get('http://localhost:8080/groups')
@@ -47,6 +56,10 @@ const GroupsPage = (props) => {
         </div>
         <div></div>
       </div>
+
+       <button className="createEventBtn" onClick={handleCreateGroupClick}> 
+            Create Group
+          </button>
 
       <ul>
         {groupSearchResults.map((selectedGroup, index) => (
