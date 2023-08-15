@@ -6,11 +6,15 @@ const EventsPage = (props) => {
   const [eventSearchQuery, setEventSearchQuery] = useState("");
   const [eventSearchResults, setEventSearchResults] = useState([]);
   const [showCreateEvent, setShowCreateEvent] = useState(false);
+  // console.log (props)
 
   const handleCreateEventClick = () => {
     setShowCreateEvent(true);
-    props.onHomeChange("chosenPage", "createEvent"); // Set currentPage to 'createEvent'
+    console.log ("TESTING CREATE EVENT")
+    // setSelectedEvent(null)
+    props.onHomeChange("createEvent"); // Set currentPage to 'createEvent'
   };
+
 
   const handleEventClick = (selectedEvent) => {
     props.onHomeChange("chosenPage", selectedEvent);

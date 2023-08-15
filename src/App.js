@@ -55,7 +55,7 @@ export default function App() {
         {currentPage === 'contactUs' && <ContactUs/>}
         {/* {currentPage === 'chosenPage' && <ChosenEvent/>} */}
         {currentPage === 'chosenPageGr' && <ChosenGroup/>}
-        {currentPage === 'createEvent' && <CreateEvent/>}
+        {currentPage === 'createEvent' && <CreateEvent onHomeChange/>}
         {currentPage === 'chosenPage' && selectedEvent && (
           <ChosenEvent event={selectedEvent} />
         )}
