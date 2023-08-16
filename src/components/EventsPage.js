@@ -11,6 +11,11 @@ const EventsPage= (props) => {
   const [events, setEvents] = useState([]);
   // const [chosenEvent, setChosenEvent] = useState(null)
 
+  const handleCreateEventClick = () => {
+    props.onHomeChange("createEvent");
+  };
+  
+
 
   useEffect(() => {
     axios.get('http://localhost:8080/events')
@@ -67,6 +72,9 @@ const handleEventClick = (selectedEvent) => {
        
     
       </div>
+     <button className="createEventBtn" onClick={handleCreateEventClick}> 
+            Create Event 
+          </button>
       <div>
       
       </div>
