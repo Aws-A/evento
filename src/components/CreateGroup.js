@@ -9,24 +9,23 @@ const CreateGroup = () => {
 
   const handleCreateGroup = () => {
     const newGroup = {
-      groupName,
-      groupDescription,
+      groupName: groupName,
+      groupDescription: groupDescription,
     };
-
-    axios.post("http://localhost:8080/createGroups", newGroup)
-        
-    .then(response => {
-      console.log("Group created:", response.data);
-    })
-    .catch(error => {
-      if (error.response) {
-        console.error("Error creating group:", error.response.data);
-      } else {
-        console.error("Error creating group:", error.message);
-      }
-    });
   
-};
+    axios.post("http://localhost:8080/createGroups", newGroup)
+      .then(response => {
+        console.log("Group created:", response.data);
+      })
+      .catch(error => {
+        if (error.response) {
+          console.error("Error creating group:", error.response.data);
+        } else {
+          console.error("Error creating group:", error.message);
+        }
+      });
+  };
+  
 
 
   return (
