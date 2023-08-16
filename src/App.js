@@ -22,11 +22,12 @@ import CreateGroup from './components/CreateGroup';
 export default function App() {
   const [currentPage, setCurrentPage] = useState('homePage');
   const [selectedEvent, setSelectedEvent] = useState(null);
+  const [selectedGroup, setSelectedGroup] = useState(null); 
 
   const handlePageChange = (page, event) => {
     setCurrentPage(page);
     setSelectedEvent(event);
-    // console.log("HandlePageChange " + page, event);
+    console.log("HandlePageChange " + page, event);
   };
 
   const [data, setData] = useState([]);
@@ -55,7 +56,9 @@ export default function App() {
         {currentPage === 'groups' && <GroupsPage onHomeChange={handlePageChange}/>}
         {currentPage === 'contactUs' && <ContactUs/>}
         {/* {currentPage === 'chosenPage' && <ChosenEvent/>} */}
-        {currentPage === 'chosenPageGr' && <ChosenGroup/>}
+        {currentPage === 'chosenPageGr' && selectedEvent && (
+  <ChosenGroup selectedGroup={selectedEvent} />
+)}
         {currentPage === 'createEvent' && <CreateEvent onHomeChange/>}
         {currentPage === 'createGroup' && <CreateGroup onHomeChange/>}
         {currentPage === 'chosenPage' && selectedEvent && (

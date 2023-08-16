@@ -1,23 +1,25 @@
 import "./ChosenGroup.css";
 
-const ChosenGroup = () => {
+const ChosenGroup = ({selectedGroup}) => {
+  // console.log (selectedGroup)
 
   return (
     <> 
       <div class="contentGr">
+
         <div class="groupContentGr">
           <div class="mainGroup">
             <div class="frontGr">
               <img src="/images/dineGroup.jpg"/>
               <div class="byImgGr">
-                <h1> Vancouver Let’s Go </h1>
-                <p> Our Group is to meet with other people and hang out in restaurants, cinemas, and theatres </p>
+              <h1>{selectedGroup.groupname}</h1>
+              <h2>{selectedGroup.groupdescription}</h2>
+                {/* <p> {selectedGroup.groupdescription} </p>  */}
               </div>
             </div>
             <div class="infoGr">
               <div class="leftGr">
-                <p><b>Number of Members:</b> 361 </p>
-                <p> <b>Year Created:</b> 2020 </p>
+               
               </div>
               <div class="rightGr">
                 <p> </p>

@@ -38,7 +38,7 @@ const GroupsPage = (props) => {
   }, [groupSearchQuery, groups]);
 
   const handleGroupClick = (selectedGroup) => {
-    props.onHomeChange("chosenPage", selectedGroup);
+    props.onHomeChange("chosenPageGr", selectedGroup);
   };
 
   return (
