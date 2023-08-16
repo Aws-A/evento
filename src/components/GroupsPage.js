@@ -31,8 +31,8 @@ const GroupsPage = (props) => {
 
   useEffect(() => {
     const filteredGroups = groups.filter(group =>
-      group.groupname.toLowerCase().includes(groupSearchQuery.toLowerCase()) ||
-      group.groupdescription.toLowerCase().includes(groupSearchQuery.toLowerCase())
+      group.groupname && group.groupname.toLowerCase().includes(groupSearchQuery.toLowerCase()) ||
+      group.groupdescription && group.groupdescription.toLowerCase().includes(groupSearchQuery.toLowerCase())
     );
     setGroupSearchResults(filteredGroups);
   }, [groupSearchQuery, groups]);
