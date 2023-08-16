@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import './EventsPage.css'
+import './EventsPage.css';
 
 
 const EventsPage= (props) => {
@@ -16,7 +16,7 @@ const EventsPage= (props) => {
   axios.get('http://localhost:8080/events')
   .then(console.log("TESTING EVENT PAGE"))
   .then(response => {
-    // console.log(response.data)
+    console.log('test data',response.data)
     setEvents(response.data)
   })
   .catch(error => {
@@ -68,10 +68,19 @@ const handleEventClick = (selectedEvent) => {
           className="event-box"
           onClick={() => handleEventClick(selectedEvent)}
         >
-          <strong>{selectedEvent.eventname}</strong>
-          <p>{selectedEvent.eventdescription}</p>
-      <p>{selectedEvent.eventlocation}</p>
-      <p>{selectedEvent.eventdate}</p>
+      <img id="eventImg" src="/images/beachVolleyball.jpg" onLoad={() => {
+        let eventImage = document.getElementById("eventImg");
+        if (selectedEvent.eventname === "Art Exhibition") {
+        eventImage.src="/images/dineGroup.jpg"
+      }}}/>
+      <div className="contentInside textLeft">
+      <strong>{selectedEvent.eventname}</strong>
+      <p>{selectedEvent.eventdescription}</p>
+      </div>
+      <div className="contentInside textRight">
+      <p>Location: {selectedEvent.eventlocation}</p>
+      <p>Time: {selectedEvent.eventdate}</p>
+      </div>
         </li>
       ))}
     </ul>

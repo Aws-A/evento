@@ -1,7 +1,10 @@
 {
-  "name": "final_project",
-  "version": "0.1.0",
-  "proxy": "http://localhost:8080",
+    "name": "final_project",
+    "version": "0.1.0",
+    "options": {
+      "allowedHosts": ["localhost", ".localhost"],
+      "proxy": "http://localhost:8080/"
+    },
   "private": true,
   "dependencies": {
     "@auth0/auth0-react": "^2.2.0",

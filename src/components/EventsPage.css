@@ -3,8 +3,36 @@ ul {
 }
 
 .event-box {
-  border: 1px solid #ccc; /* You can adjust the border style as needed */
+  display: flex;
+  border: 1px solid #FF7557;; /* You can adjust the border style as needed */
+  border-width: 0px 0px 1px 0px;
   padding: 10px;
   margin: 10px 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* You can adjust the box-shadow as needed */
+}
+
+.contentInside {
+  width: 400px;
+  text-align: left;
+  margin-left: 5%;
+}
+
+.event-box img {
+  width: 20%;
+  height: 40%;
+  border-radius: 15px;
+}
+
+.textRight {
+  margin-top: -0.5%;
+}
+
+strong {
+  font-size: 22px;
+  color: #FF7557;
+}
+
+event-box p{
+  font-size: 17px;
+  color: black;
 }
