@@ -17,15 +17,15 @@ const EventsPage= (props) => {
   
 
 
-  useEffect(() => {
-    axios.get('http://localhost:8080/events')
-      .then(response => {
-        setEvents(response.data);
-      })
-      .catch(error => {
-        console.error('Error fetching test data: couldnt get to events', error);
-      });
-  }, []);
+  // useEffect(() => {
+  //   axios.get('http://localhost:8080/events')
+  //     .then(response => {
+  //       setEvents(response.data);
+  //     })
+  //     .catch(error => {
+  //       console.error('Error fetching test data: couldnt get to events', error);
+  //     });
+  // }, []);
 
 
   useEffect(() => {

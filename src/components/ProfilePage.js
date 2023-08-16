@@ -9,6 +9,10 @@ const ProfilePage = (props) => {
   const [phoneNumber, setPhoneNumber] = useState(""); 
     const [email, setEmail] = useState(""); 
 
+    const handleCreateEventClick = () => {
+      props.onHomeChange("createEvent");
+    };
+
 
   if (isAuthenticated && user) {
    
@@ -72,6 +76,9 @@ const ProfilePage = (props) => {
         <button className="btn" onClick={handleSaveChanges}>
   Save Changes
 </button>
+<button className="createEventBtn" onClick={handleCreateEventClick}> 
+            Create Event 
+          </button>
       </>
     );
   } else {
