@@ -4,7 +4,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import "./ProfilePage.css";
 import axios from "axios";
 
-const ProfilePage = () => {
+const ProfilePage = (props) => {
   const { user, isAuthenticated } = useAuth0();
   const [phoneNumber, setPhoneNumber] = useState(""); 
     const [email, setEmail] = useState(""); 
