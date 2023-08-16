@@ -22,6 +22,7 @@ const EventsPage = (props) => {
   
   const [events, setEvents] = useState([]);
 
+
   useEffect(() => {
     axios.get('http://localhost:8080/events')
       .then(response => {
@@ -32,8 +33,8 @@ const EventsPage = (props) => {
       });
   }, []);
 
+
   useEffect(() => {
-    // Filter events based on search query
     const filteredEvents = events.filter(event =>
       event.eventname.toLowerCase().includes(eventSearchQuery.toLowerCase()) ||
       event.eventlocation.toLowerCase().includes(eventSearchQuery.toLowerCase()) ||

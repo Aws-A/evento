@@ -4,7 +4,7 @@ import axios from "axios";
 
 const LoginButton = () => {
   const { loginWithRedirect, user, isAuthenticated } = useAuth0();
-  const [nameExists, setNameExists] = useState(false); // Initialize with false
+  const [nameExists, setNameExists] = useState(false); 
 
   useEffect(() => {
     if (isAuthenticated && user) {
@@ -21,10 +21,10 @@ const LoginButton = () => {
           const exists = names.includes(fullName) || names.includes(user.name);
   
           setNameExists(exists); // Update the state with the result
-          console.log (exists)
+          console.log (exists )
 
           if (exists) {
-            console.log("User's name already exists and is in the DB");
+            console.log("User's name already exists and is in the DB", user);
           } else {
             console.log("User's name does not exist, creating new user");
             const placeholderEmail = `${given_name}.${family_name}@hotmail.com`;
