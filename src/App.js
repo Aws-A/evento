@@ -51,7 +51,7 @@ export default function App() {
       
         {currentPage === 'homePage' && <HomePage onHomeChange={handlePageChange} />}
         {currentPage === 'explore' && <EventsPage onHomeChange={handlePageChange}/>}
-        {currentPage === 'profile' && <ProfilePage />}
+        {currentPage === 'profile' && <ProfilePage onHomeChange={handlePageChange}/>}
         {currentPage === 'communications' && <CommunicationsPage/>}
         {currentPage === 'groups' && <GroupsPage onHomeChange={handlePageChange}/>}
         {currentPage === 'contactUs' && <ContactUs/>}

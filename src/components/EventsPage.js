@@ -29,16 +29,21 @@ const EventsPage= (props) => {
   const [events, setEvents] = useState([]);
   // const [chosenEvent, setChosenEvent] = useState(null)
 
+  const handleCreateEventClick = () => {
+    props.onHomeChange("createEvent");
+  };
+  
 
-  useEffect(() => {
-    axios.get('http://localhost:8080/events')
-      .then(response => {
-        setEvents(response.data);
-      })
-      .catch(error => {
-        console.error('Error fetching test data: couldnt get to events', error);
-      });
-  }, []);
+
+  // useEffect(() => {
+  //   axios.get('http://localhost:8080/events')
+  //     .then(response => {
+  //       setEvents(response.data);
+  //     })
+  //     .catch(error => {
+  //       console.error('Error fetching test data: couldnt get to events', error);
+  //     });
+  // }, []);
 
 
   useEffect(() => {
@@ -85,6 +90,9 @@ const handleEventClick = (selectedEvent) => {
        
     
       </div>
+     <button className="createEventBtn" onClick={handleCreateEventClick}> 
+            Create Event 
+          </button>
       <div>
       
       </div>
