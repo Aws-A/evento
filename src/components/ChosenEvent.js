@@ -1,7 +1,23 @@
 import "./ChosenEvent.css";
 import EventDetails from "./JoinEventButton";
-
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 const ChosenEvent = ({event}) => {
+ 
+  const [attendeesCount, setAttendeesCount] = useState(0);
+    
+
+    useEffect(() => {
+      axios.get(`http://localhost:8080/events/${event.eventid}/attendees/count`)
+        .then(response => {
+          setAttendeesCount(response.data.count);
+        })
+        .catch(error => {
+          console.error(`Error fetching attendees count for event ${event.eventid}:`, error);
+        });
+    }, [event.eventid]);
+  
+  
 
   return (
     <> 
@@ -20,7 +36,7 @@ const ChosenEvent = ({event}) => {
               <div class="left">
                 <p><b> Location: {event.eventlocation} </b> </p>
                 <p> <b>Date:</b> {event.eventdate} </p>
-                <p> <b>Going:</b>{event.attendeesCount}</p>
+                <p> <b>Going:</b>{attendeesCount}</p>
                 {/* <p> <b>Time:</b> 12 P.M </p> */}
               </div>
               <div class="right">
