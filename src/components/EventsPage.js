@@ -2,6 +2,24 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import './EventsPage.css';
 
+function updateImageSource(selectedEvent) {
+    if (selectedEvent.eventname === "Art Exhibition") {
+      return "/images/artEx.jpg";
+    } else if (selectedEvent.eventname === "Coding Workshop") {
+      return "/images/coding.jpg";
+    } else if (selectedEvent.eventname === "Hiking Adventure") {
+      return "/images/hiking.jpg";
+    } else if (selectedEvent.eventname === "Live Music Night") {
+      return "/images/liveMusic.jpg";
+    } else if (selectedEvent.eventname === "Nature Walk") {
+      return "/images/walk.jpg";
+    } else if (selectedEvent.eventname === "Tech Conference") {
+      return "/images/tech.jpg";
+    } else {
+      return "/images/beachVolleyball.jpg"
+    }
+}
+
 
 const EventsPage= (props) => {
   const [eventSearchQuery, setEventSearchQuery] = useState("");
@@ -80,11 +98,7 @@ const handleEventClick = (selectedEvent) => {
           className="event-box"
           onClick={() => handleEventClick(selectedEvent)}
         >
-      <img id="eventImg" src="/images/beachVolleyball.jpg" onLoad={() => {
-        let eventImage = document.getElementById("eventImg");
-        if (selectedEvent.eventname === "Art Exhibition") {
-        eventImage.src="/images/dineGroup.jpg"
-      }}}/>
+      <img id="eventImg" src={updateImageSource(selectedEvent)}/>
       <div className="contentInside textLeft">
       <strong>{selectedEvent.eventname}</strong>
       <p>{selectedEvent.eventdescription}</p>
