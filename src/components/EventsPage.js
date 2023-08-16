@@ -40,8 +40,39 @@ const EventsPage = (props) => {
       event.eventlocation.toLowerCase().includes(eventSearchQuery.toLowerCase()) ||
       event.eventdescription.toLowerCase().includes(eventSearchQuery.toLowerCase())
     );
+    
     setEventSearchResults(filteredEvents);
   }, [eventSearchQuery, events]);
+
+
+
+  // useEffect(() => {
+  //   const fetchAttendeesCounts = async () => {
+  //     const eventPromises = eventSearchResults.map(event => {
+  //       return axios.get(`http://localhost:8080/events/${event.eventid}/attendees/count`)
+  //         .then(response => {
+  //           const attendeesCount = response.data.count;
+  //           return { ...event, attendeesCount };
+  //         })
+  //         .catch(error => {
+  //           console.error(`Error fetching attendees count for event ${event.eventid}:`, error);
+  //           return event; // Return the event with original data if there's an error
+  //         });
+  //     });
+
+  //     try {
+  //       const updatedEvents = await Promise.all(eventPromises);
+  //       setEventSearchResults(updatedEvents);
+  //     } catch (error) {
+  //       // Handle error if needed
+  //     }
+  //   };
+
+  //   fetchAttendeesCounts();
+  // }, [eventSearchResults]);
+
+
+
 
   return (
     <>
