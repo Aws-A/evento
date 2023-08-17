@@ -119,19 +119,7 @@ const handleEventClick = (selectedEvent) => {
       ))}
     </ul>
          
-
-
-
-
-   
-   <div onClick={() => props.onHomeChange("chosenPage")}> Aws Temporary Link </div>
    </>
-  
-
-
-
-
-
   );
 };
 
