@@ -15,7 +15,7 @@ export function updateImageSource(selectedEvent) {
   } else if (selectedEvent.eventname === "Tech Conference") {
     return "/images/tech.jpg";
   } else {
-    return "/images/beachVolleyball.jpg"
+    return "/images/defaultGroup.jpg"
   }
 }
 
