@@ -108,7 +108,7 @@ const ChosenEvent = ({event}) => {
 
         {organizerId && group && (
   <div className="groupContent">
-    <img src="/images/beachGroup.jpg" alt="Group" />
+    <img src="/images/defaultGroup.jpg" alt="Group" />
    
     <h1>{groupName}</h1>
     <p>{groupDescription}</p>
