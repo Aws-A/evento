@@ -2,7 +2,25 @@
 import "./groups.css"
 import axios from "axios";
 import React, { useState, useEffect } from "react";
-import './EventsPage.css'
+import './EventsPage.css';
+
+function updateImageSrc(selectedGroup) {
+  if (selectedGroup.groupname === "Tech Enthusiasts") {
+    return "/images/techGr.jpg";
+  } else if (selectedGroup.groupname === "Hiking Club") {
+    return "/images/hikingGr.jpg";
+  } else if (selectedGroup.groupname === "Art Community") {
+    return "/images/artGr.jpg";
+  } else if (selectedGroup.groupname === "Coding Enthusiasts") {
+    return "/images/codingGr.jpg";
+  } else if (selectedGroup.groupname === "Nature Lovers") {
+    return "/images/natureGr.jpg";
+  } else if (selectedGroup.groupname === "Music Fans") {
+    return "/images/musicGr.jpg";
+  } else {
+    return "/images/beachVolleyball.jpg"
+  }
+}
 
 
 const GroupsPage = (props) => {
@@ -68,14 +86,15 @@ const GroupsPage = (props) => {
             className="event-box"
             onClick={() => handleGroupClick(selectedGroup)}
           >
-            <strong>{selectedGroup.groupname}</strong>
-            <p>{selectedGroup.groupdescription}</p>
-  
+            <img id="groupImg" src={updateImageSrc(selectedGroup)}/>
+            <div className="contentInside">
+              <strong className="groupsTitle">{selectedGroup.groupname}</strong>
+              <p>{selectedGroup.groupdescription}</p>
+            </div>
           </li>
         ))}
       </ul>
 
-      <div onClick={() => props.onHomeChange("chosenPage")}>Aws Temporary Link</div>
     </>
   );
 };

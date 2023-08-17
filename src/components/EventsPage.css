@@ -2,6 +2,11 @@ ul {
   list-style: none;
 }
 
+.eventSearch {
+  font-size: 14px;
+  margin-left: 4%;
+}
+
 .event-box {
   display: flex;
   border: 1px solid #FF7557;; /* You can adjust the border style as needed */
