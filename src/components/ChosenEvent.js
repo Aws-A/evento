@@ -5,7 +5,9 @@ import axios from 'axios';
 const ChosenEvent = ({event}) => {
  
   const [attendeesCount, setAttendeesCount] = useState(0);
-    
+  const [groupId, setGroupId] = useState(null);
+  const [organizerId, setOrganizerId] = useState(null);
+    console.log(event.eventid)
 
     useEffect(() => {
       axios.get(`http://localhost:8080/events/${event.eventid}/attendees/count`)
@@ -15,7 +17,23 @@ const ChosenEvent = ({event}) => {
         .catch(error => {
           console.error(`Error fetching attendees count for event ${event.eventid}:`, error);
         });
+    
+        axios
+        .get(`http://localhost:8080/events/${event.eventid}/organizer`)
+        .then(response => {
+          const { organizerId } = response.data;
+          setOrganizerId(organizerId); 
+          console.log (organizerId)
+        })
+        .catch(error => {
+          console.log (event.eventid)
+          console.error(`Error fetching organizerId for event ${event.eventid}:`, error);
+          console.error('Response data:', error.response.data); // Log the response data for debugging
+        });
     }, [event.eventid]);
+    
+
+    
   
   
 
@@ -64,19 +82,19 @@ const ChosenEvent = ({event}) => {
             <div class="date"> Friday 4/8/2023 </div>
           </div>
         </div>
-        <div class="groupContent">
-        <img src="/images/beachGroup.jpg"/>
-          <h1>Toronto Volleyball Friends </h1>
-          <p> We organize volleyball events in Toronto: <br/>
-              Beach Volleyball <br/>
-              Indoor Volleyball <br/>
-              Grass Volleyball<br/>
-              <br/>
-              {/* <b> Number of Members:</b>  752 <br/> */}
-              <br/>
-              {/* <b> Year Created: </b> 2017 */}
-          </p>
-        </div>
+
+        {organizerId && ( // Check if organizerId exists
+          <div class="groupContent">
+            <img src="/images/beachGroup.jpg"/>
+            <h1>Toronto Volleyball Friends</h1>
+            <p> We organize volleyball events in Toronto: <br/>
+                Beach Volleyball <br/>
+                Indoor Volleyball <br/>
+                Grass Volleyball<br/>
+            </p>
+          </div>
+        )}
+
       </div>
     </>
    
