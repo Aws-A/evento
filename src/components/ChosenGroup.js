@@ -2,7 +2,7 @@ import "./ChosenGroup.css";
 import {updateImageSrc} from "./ChangeImageSource.js";
 
 const ChosenGroup = ({selectedGroup}) => {
-  // console.log (selectedGroup)
+console.log ('Do selected Group',selectedGroup)
 
   return (
     <> 
