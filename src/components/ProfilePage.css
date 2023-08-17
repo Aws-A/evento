@@ -19,8 +19,7 @@ font-family: 'Nunito Sans', sans-serif;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /*align-items: flex-start;
-  */
+  margin-left: -17%;
 }
 
 .left-column,
@@ -35,6 +34,10 @@ font-family: 'Nunito Sans', sans-serif;
   display: flex;
   justify-content: center;
   
+}
+
+.titlePage {
+  font-size: 40px;
 }
 
 .btn,
@@ -56,6 +59,11 @@ button:hover {
   background-color: #0C6496;
 }
 
+.profileEventsBtn {
+  margin-left: -33%;
+  margin-top: 4%;
+  margin-bottom: 2%;
+}
 
 .column {
   display: flex;
@@ -67,8 +75,9 @@ button:hover {
 .ProfileEdits {
   display: flex;
   justify-content: space-between;
-  margin: 0 20px 0 80px;
-  
+  margin-top: -2%;
+  margin-bottom: 50px;
+  margin-left: 100px;
 }
 
 
@@ -102,8 +111,8 @@ button:hover {
 .SaveChangesContainer {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
-  padding-right: 140px;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 .SaveChangesBtn {
@@ -158,9 +167,7 @@ button:hover {
 }
 
 .ActivityBtn:nth-child(even) {
-  border: 2px solid orange;
-  color: orange;
-  /* Set text color to orange for even buttons */
-  width: 250px;
-    font-size: 20px;
+  border: 2px solid #FF7557;
+  color: #FF7557;
 }
+

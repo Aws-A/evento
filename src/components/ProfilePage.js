@@ -61,7 +61,7 @@ const ProfilePage = (props) => {
           </div>
           <div className="right-column">
             <button
-              className="createEventBtn"
+              className="createEventBtn profileEventsBtn"
               onClick={handleCreateEventClick}
             >
               Create Event

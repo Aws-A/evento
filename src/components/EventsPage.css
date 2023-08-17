@@ -9,20 +9,16 @@ ul {
 }
 
 .eventSearch input{
-  margin: 12% 5% 5% 50%;
-  width: 200%;
+  margin: 1.5% 5% 5% 5%;
+  padding: 1%;
+  width: 400px;
   height: 50px;
   border-radius: 5px;
   border: 1px solid #FF7557;
-  padding: 5%;
   background-color: #F9F9F9;
 }
 
 .createEventBtn {
-    margin-left: 25%;
-    margin-top: 1.3%;
-    width: 20%;
-    height: 50px;
     background-color: #FF7557;
     border: #FF7557;
     border-radius: 5px;
@@ -32,7 +28,12 @@ ul {
 
 .createEventBtn p{
   font-size: 22px;
-  margin-top: 5%;
+  margin-top: 5.5%;
+}
+
+.eventsBtn {
+  margin-top: 1.4%;
+  margin-left: 2.5%;
 }
 
 .event-box {

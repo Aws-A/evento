@@ -1,0 +1,40 @@
+.creaeSection {
+  display: inline-grid;
+  margin-bottom: 10%;
+}
+
+.organizeText{
+  width: 400px;
+  height: 40px;
+  border-radius: 5px;
+  margin-top: 10%;
+  resize: none;
+  background-color: #EFEFEF; /* Set the background color to grey */
+  padding: 8px; /* Add some padding for better appearance */
+  color: #666666; /* Set the text color */
+  border: 1px solid #FF7557;
+}
+
+.organize{
+  width: 400px;
+  height: 40px;
+  border-radius: 5px;
+  margin-top: 10%;
+  resize: none;
+  background-color: #EFEFEF; /* Set the background color to grey */
+  padding: 8px; /* Add some padding for better appearance */
+  color: #666666; /* Set the text color */
+  border: 1px solid #FF7557;
+}
+
+.createBtn {
+  width: 400px;
+  height: 40px;
+  border-radius: 5px;
+  margin-top: 10%;
+  resize: none;
+  background-color: #FF7557; /* Set the background color to grey */
+  padding: 8px; /* Add some padding for better appearance */
+  color: #EFEFEF; /* Set the text color */
+  border: 1px solid #FF7557; 
+}
