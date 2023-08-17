@@ -100,7 +100,7 @@ const ChosenEvent = ({event}) => {
               </div>
               <div class="right">
                 <p> <b>Price:</b> Free </p>
-                {/* <EventDetails key={event.eventId} event={event}/> */}
+                <EventDetails key={event.eventId} event={event}/>
                 {/* <p> <b>Requirements: </b> Beach Suit </p> */}
               </div>
             </div>
