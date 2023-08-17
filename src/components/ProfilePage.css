@@ -1,6 +1,16 @@
+/*  font-size: 14px; */
+
 .mainContainer {
   font-style: italic;
   font-size: 11px;
+}
+
+.ProfileTitle {
+  font-size: 44px;
+  font-family: 'Bungee', cursive;
+font-family: 'Nunito Sans', sans-serif;
+  color: #FF7557;
+  padding: 10px 20px;
 }
 
 
@@ -24,6 +34,7 @@
 .top {
   display: flex;
   justify-content: center;
+  
 }
 
 .btn,
@@ -31,7 +42,7 @@
   margin-left: 3%;
   margin-top: 2%;
   margin-bottom: 2%;
-  width: 20%;
+  width: 200px;
   height: 50px;
   background-color: #FF7557;
   border: #FF7557;
@@ -56,13 +67,17 @@ button:hover {
 .ProfileEdits {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin: 0 20px 0 80px;
+  
 }
+
+
 
 .ProfileEdits h1 {
   font-weight: bold;
   margin: 0;
   margin-top: 10px;
+  
 }
 
 .ProfileEdits textarea {
@@ -71,20 +86,24 @@ button:hover {
   border-radius: 10px;
   margin-top: 2%;
   resize: none;
-  background-color: #EFEFEF; /* Set the background color to grey */
-  padding: 8px; /* Add some padding for better appearance */
-  color: #666666; /* Set the text color */
+  background-color: #EFEFEF;
+  /* Set the background color to grey */
+  padding: 8px;
+  /* Add some padding for better appearance */
+  color: #666666;
+  /* Set the text color */
   border: #666666;
+  font-size: 20px;
+  color: black;
+  
 }
 
-
-
-/* ... (previous styles) ... */
 
 .SaveChangesContainer {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  padding-right: 140px;
 }
 
 .SaveChangesBtn {
@@ -103,12 +122,16 @@ button:hover {
 }
 
 
-.Activities {
+
+
+
+.ActivityGroup {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 600px; /* Adjust the max-width as needed */
-  margin: 0 auto;
+  width: 90%;
+  margin-bottom: 10px;
+  margin: 0 20px 0 80px;
 }
 
 .ActivityBtn {
@@ -119,16 +142,25 @@ button:hover {
   font-size: 16px;
   padding: 8px 12px;
   margin: 5px;
-  cursor: not-allowed; /* Add cursor style to indicate it's not clickable */
+  cursor: not-allowed;
+  /* Add cursor style to indicate it's not clickable */
+  width: 120px;
+  /* Adjust the width as needed */
+  text-align: center;
+  /* Center the text horizontally */
 }
 
-/* Apply alternating border colors */
+/* Apply alternating border colors and text colors */
 .ActivityBtn:nth-child(odd) {
   border: 2px solid black;
+  width: 250px;
+  font-size: 20px;
 }
 
 .ActivityBtn:nth-child(even) {
   border: 2px solid orange;
+  color: orange;
+  /* Set text color to orange for even buttons */
+  width: 250px;
+    font-size: 20px;
 }
-
-

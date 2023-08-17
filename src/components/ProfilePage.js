@@ -39,7 +39,7 @@ const ProfilePage = (props) => {
 
     return (
       <>
-        <h1>Profile</h1>
+      <h1 className="ProfileTitle">Profile</h1>
 
         <div className="profile-container">
           <div className="left-column">
@@ -114,22 +114,23 @@ const ProfilePage = (props) => {
 
 
 
-
-
-        <div className="Activities">
-  <button className="ActivityBtn" disabled>Dining Out</button>
-  <button className="ActivityBtn" disabled>Volleyball</button>
-  <button className="ActivityBtn" disabled>Chess</button>
-  <button className="ActivityBtn" disabled>Travel</button>
-  <button className="ActivityBtn" disabled>Climbing</button>
+  <div className="Activities">
+  <div className="ActivityGroup">
+    <button className="ActivityBtn">Dining Out</button>
+    <button className="ActivityBtn">Volleyball</button>
+    <button className="ActivityBtn">Chess</button>
+    <button className="ActivityBtn">Travel</button>
+    <button className="ActivityBtn">Climbing</button>
+  </div>
+  <div className="ActivityGroup">
+    <button className="ActivityBtn">Hiking</button>
+    <button className="ActivityBtn">Drawing</button>
+    <button className="ActivityBtn">Walking</button>
+    <button className="ActivityBtn">Dancing</button>
+    <button className="ActivityBtn">Karaoke</button>
+  </div>
 </div>
-<div className="Activities">
-  <button className="ActivityBtn" disabled>Hiking</button>
-  <button className="ActivityBtn" disabled>Drawing</button>
-  <button className="ActivityBtn" disabled>Walking</button>
-  <button className="ActivityBtn" disabled>Dancing</button>
-  <button className="ActivityBtn" disabled>Karaoke</button>
-</div>
+
 
 
         <div className="SaveChangesContainer">
