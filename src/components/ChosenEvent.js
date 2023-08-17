@@ -100,7 +100,7 @@ const ChosenEvent = ({event}) => {
               </div>
               <div class="right">
                 <p> <b>Price:</b> Free </p>
-                <EventDetails key={event.eventId} event={event}/>
+                {/* <EventDetails key={event.eventId} event={event}/> */}
                 {/* <p> <b>Requirements: </b> Beach Suit </p> */}
               </div>
             </div>
@@ -115,22 +115,18 @@ const ChosenEvent = ({event}) => {
                 <h2> Past Events </h2>
               </div>
             </div>
-            <p> Beach Volleyball (Public) </p>
+            <p>{event.eventname} (Public) </p>
             <div class="date"> Sunday 30/7/2023 </div>
-            <p> Beach Volleyball (Public) </p>
+            <p> {event.eventname} (Private) </p>
             <div class="date"> Thursday 3/8/2023</div>
-            <p> Beach Volleyball (Public) </p>
+            <p> {event.eventname} (Public) </p>
             <div class="date"> Friday 4/8/2023 </div>
           </div>
         </div>
 
         {organizerId && group && (
   <div className="groupContent">
-<<<<<<< HEAD
-    <img src="/images/defaultGroup.jpg" alt="Group" />
-=======
     <img src={updateImageGroup(groupName)} alt="Group" />
->>>>>>> b4987069091f565b75a6948e9a0050e7cc4a06e5
    
     <h1>{groupName}</h1>
     <p>{groupDescription}</p>

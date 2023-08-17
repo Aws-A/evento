@@ -8,24 +8,24 @@ const CreateGroup = () => {
   // const [organizerId, setOrganizerId] = useState("");
 
   const handleCreateGroup = () => {
-    const newGroup = {
-      groupName: groupName,
-      groupDescription: groupDescription,
-    };
-  
-    axios.post("http://localhost:8080/createGroups", newGroup)
-      .then(response => {
-        console.log("Group created:", response.data);
-      })
-      .catch(error => {
-        if (error.response) {
-          console.error("Error creating group:", error.response.data);
-        } else {
-          console.error("Error creating group:", error.message);
-        }
-      });
+  const newGroup = {
+    groupName: groupName,
+    groupDescription: groupDescription,
   };
-  
+
+  axios.post("http://localhost:8080/createGroups", newGroup)
+    .then(response => {
+      console.log("Group created:", response.data);
+    })
+    .catch(error => {
+      if (error.response) {
+        console.error("Error creating group:", error.response.data);
+      } else {
+        console.error("Error creating group:", error.message);
+      }
+    });
+};
+
 
 
   return (
@@ -38,7 +38,7 @@ const CreateGroup = () => {
         value={groupName}
         onChange={(e) => setGroupName(e.target.value)}
       />
-      <textarea
+      <input
         placeholder="Group Description"
         value={groupDescription}
         onChange={(e) => setGroupDescription(e.target.value)}
