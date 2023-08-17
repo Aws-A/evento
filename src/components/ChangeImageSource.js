@@ -33,6 +33,6 @@ export function updateImageSrc(selectedGroup) {
   } else if (selectedGroup.groupname === "Music Fans") {
     return "/images/musicGr.jpg";
   } else {
-    return "/images/beachVolleyball.jpg"
+    return "/images/defaultGroup.jpg"
   }
 }
