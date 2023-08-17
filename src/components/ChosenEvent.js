@@ -4,6 +4,24 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { updateImageSource } from "./ChangeImageSource.js";
 
+function updateImageGroup(groupName) {
+  if (groupName === "Tech Enthusiasts") {
+    return "/images/techGr.jpg";
+  } else if (groupName === "Hiking Club") {
+    return "/images/hikingGr.jpg";
+  } else if (groupName === "Art Community") {
+    return "/images/artGr.jpg";
+  } else if (groupName === "Coding Enthusiasts") {
+    return "/images/codingGr.jpg";
+  } else if (groupName === "Nature Lovers") {
+    return "/images/natureGr.jpg";
+  } else if (groupName === "Music Fans") {
+    return "/images/musicGr.jpg";
+  } else {
+    return "/images/defaultGroup.jpg";
+  }
+}
+
 const ChosenEvent = ({event}) => {
  
   const [attendeesCount, setAttendeesCount] = useState(0);
@@ -108,7 +126,7 @@ const ChosenEvent = ({event}) => {
 
         {organizerId && group && (
   <div className="groupContent">
-    <img src="/images/beachGroup.jpg" alt="Group" />
+    <img src={updateImageGroup(groupName)} alt="Group" />
    
     <h1>{groupName}</h1>
     <p>{groupDescription}</p>
