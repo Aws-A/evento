@@ -1,4 +1,4 @@
-import "./groups.css"
+import "./GroupsPage.css"
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 import './EventsPage.css';
@@ -47,20 +47,17 @@ const GroupsPage = (props) => {
       <div className="eventSearch">
     
         <h1>Search</h1>
-        <div>
           <input
             type="text"
             value={groupSearchQuery}
             onChange={(e) => setGroupSearchQuery(e.target.value)}
             placeholder="Search groups..."
           />
-        </div>
-        <div></div>
-      </div>
-
-       <button className="createEventBtn GroupsBtn" onClick={handleCreateGroupClick}> 
+        <button className="createEventBtn groupsBtn" onClick={handleCreateGroupClick}> 
             <p> Create Group </p>
           </button>
+
+      </div>
 
       <ul>
         {groupSearchResults.map((selectedGroup, index) => (
