@@ -45,7 +45,7 @@ const CreateEvent = () => {
         value={eventName}
         onChange={(e) => setEventName(e.target.value)}
       />
-      <textarea
+      <input
         className="organizeText"
         placeholder="Event Description"
         value={eventDescription}

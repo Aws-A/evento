@@ -115,11 +115,11 @@ const ChosenEvent = ({event}) => {
                 <h2> Past Events </h2>
               </div>
             </div>
-            <p> Beach Volleyball (Public) </p>
+            <p>{event.eventname} (Public) </p>
             <div class="date"> Sunday 30/7/2023 </div>
-            <p> Beach Volleyball (Public) </p>
+            <p> {event.eventname} (Private) </p>
             <div class="date"> Thursday 3/8/2023</div>
-            <p> Beach Volleyball (Public) </p>
+            <p> {event.eventname} (Public) </p>
             <div class="date"> Friday 4/8/2023 </div>
           </div>
         </div>
