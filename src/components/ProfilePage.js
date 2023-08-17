@@ -39,7 +39,7 @@ const ProfilePage = (props) => {
 
     return (
       <>
-        <h1>Profile</h1>
+        <h1 class="titlePage">My Profile</h1>
 
         <div className="profile-container">
           <div className="left-column">
@@ -61,7 +61,7 @@ const ProfilePage = (props) => {
           </div>
           <div className="right-column">
             <button
-              className="createEventBtn"
+              className="createEventBtn profileEventsBtn"
               onClick={handleCreateEventClick}
             >
               Create Event
@@ -116,7 +116,7 @@ const ProfilePage = (props) => {
 
 
 
-        <div className="Activities">
+  <div className="Activities">
   <button className="ActivityBtn" disabled>Dining Out</button>
   <button className="ActivityBtn" disabled>Volleyball</button>
   <button className="ActivityBtn" disabled>Chess</button>

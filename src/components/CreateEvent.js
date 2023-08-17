@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./create.css";
 
 const CreateEvent = () => {
   const [eventName, setEventName] = useState("");
@@ -34,32 +35,38 @@ const CreateEvent = () => {
 
   return (
     <div>
-      <h1>Organize Event</h1>
+      <h1 className="titlePage">Organize Event</h1>
 
+      <div className="creaeSection">
       <input
+        className="organize"
         type="text"
         placeholder="Event Name"
         value={eventName}
         onChange={(e) => setEventName(e.target.value)}
       />
       <input
+        className="organizeText"
         placeholder="Event Description"
         value={eventDescription}
         onChange={(e) => setEventDescription(e.target.value)}
       />
       <input
+        className="organize"
         type="text"
         placeholder="Event Location"
         value={eventLocation}
         onChange={(e) => setEventLocation(e.target.value)}
       />
       <input
+        className="organize"
         type="date"
         value={eventDate}
         onChange={(e) => setEventDate(e.target.value)}
       />
 
-      <button onClick={handleCreateEvent}>Create Event</button>
+      <button className="createBtn" onClick={handleCreateEvent}>Create Event</button>
+      </div>
     </div>
   );
 }

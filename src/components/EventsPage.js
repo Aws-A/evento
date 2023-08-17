@@ -59,9 +59,9 @@ const handleEventClick = (selectedEvent) => {
 
   return (
     <>
+    <h1 class="titlePage">Events</h1>
     <div className="eventSearch">
       <h1>Search</h1>
-      <div>
         {/* <h2>Events</h2> */}
         <input
           className="searchText"
@@ -70,15 +70,9 @@ const handleEventClick = (selectedEvent) => {
           onChange={(e) => setEventSearchQuery(e.target.value)}
           placeholder="Search events..."
         />
-       
-    
-      </div>
-     <button className="createEventBtn" onClick={handleCreateEventClick}> 
+     <button className="createEventBtn eventsBtn" onClick={handleCreateEventClick}> 
             <p> Create Event </p> 
     </button>
-      <div>
-      
-      </div>
     </div>
 
 
