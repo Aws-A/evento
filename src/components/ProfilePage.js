@@ -39,7 +39,7 @@ const ProfilePage = (props) => {
 
     return (
       <>
-        <h1>Profile</h1>
+        <h1 class="titlePage">My Profile</h1>
 
         <div className="profile-container">
           <div className="left-column">

@@ -4,7 +4,7 @@ const ContactUs = () => {
 
   return (
     <> 
-    <h1>Contact Us</h1>
+    <h1 class="titlePage">Contact Us</h1>
     <img src="/images/line.png" class="curve"/>
     <div class="team">
       <div class="william">

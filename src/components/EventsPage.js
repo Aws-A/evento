@@ -59,6 +59,7 @@ const handleEventClick = (selectedEvent) => {
 
   return (
     <>
+    <h1 class="titlePage">Events</h1>
     <div className="eventSearch">
       <h1>Search</h1>
         {/* <h2>Events</h2> */}

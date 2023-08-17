@@ -44,6 +44,7 @@ const GroupsPage = (props) => {
 
   return (
     <>
+    <h1 class="titlePage">Groups</h1>
       <div className="eventSearch">
     
         <h1>Search</h1>
