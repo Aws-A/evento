@@ -15,6 +15,9 @@ import GroupsPage from './components/GroupsPage';
 import ContactUs from './components/ContactUs';
 import ChosenEvent from './components/ChosenEvent';
 import ChosenGroup from './components/ChosenGroup';
+import CreateEvent from './components/CreateEvent';
+import CreateGroup from './components/CreateGroup';
+
 
 
 export default function App() {
@@ -50,12 +53,16 @@ export default function App() {
       
         {currentPage === 'homePage' && <HomePage onHomeChange={handlePageChange} />}
         {currentPage === 'explore' && <EventsPage onHomeChange={handlePageChange}/>}
-        {currentPage === 'profile' && <ProfilePage />}
+        {currentPage === 'profile' && <ProfilePage onHomeChange={handlePageChange}/>} 
         {currentPage === 'communications' && <CommunicationsPage/>}
         {currentPage === 'groups' && <GroupsPage onHomeChange={handlePageChange}/>}
         {currentPage === 'contactUs' && <ContactUs/>}
         {/* {currentPage === 'chosenPage' && <ChosenEvent/>} */}
-        {currentPage === 'chosenPageGr' && selectedGroup && <ChosenGroup selectedGroup={selectedGroup}/>}
+        {currentPage === 'chosenPageGr' && selectedEvent && (
+  <ChosenGroup selectedGroup={selectedEvent} />
+)}
+        {currentPage === 'createEvent' && <CreateEvent onHomeChange/>}
+        {currentPage === 'createGroup' && <CreateGroup onHomeChange/>}
         {currentPage === 'chosenPage' && selectedEvent && (
           <ChosenEvent event={selectedEvent} />
         )}

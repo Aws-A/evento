@@ -112,11 +112,36 @@ const ProfilePage = (props) => {
           </div>
         </div>
 
+
+
+
+
+        <div className="Activities">
+  <button className="ActivityBtn" disabled>Dining Out</button>
+  <button className="ActivityBtn" disabled>Volleyball</button>
+  <button className="ActivityBtn" disabled>Chess</button>
+  <button className="ActivityBtn" disabled>Travel</button>
+  <button className="ActivityBtn" disabled>Climbing</button>
+</div>
+<div className="Activities">
+  <button className="ActivityBtn" disabled>Hiking</button>
+  <button className="ActivityBtn" disabled>Drawing</button>
+  <button className="ActivityBtn" disabled>Walking</button>
+  <button className="ActivityBtn" disabled>Dancing</button>
+  <button className="ActivityBtn" disabled>Karaoke</button>
+</div>
+
+
         <div className="SaveChangesContainer">
           <button className="btn SaveChangesBtn" onClick={handleSaveChanges}>
             Save Changes
           </button>
         </div>
+       
+
+
+
+       
       </>
     );
   } else {

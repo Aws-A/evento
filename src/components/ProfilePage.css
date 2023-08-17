@@ -1,3 +1,10 @@
+.mainContainer {
+  font-style: italic;
+  font-size: 11px;
+}
+
+
+
 .profile-container {
   display: flex;
   flex-direction: row;
@@ -59,12 +66,18 @@ button:hover {
 }
 
 .ProfileEdits textarea {
-  width: 100%;
-  height: 100px;
+  width: 80%;
+  height: 50px;
   border-radius: 10px;
-  margin-top: 5px;
+  margin-top: 2%;
   resize: none;
+  background-color: #EFEFEF; /* Set the background color to grey */
+  padding: 8px; /* Add some padding for better appearance */
+  color: #666666; /* Set the text color */
+  border: #666666;
 }
+
+
 
 /* ... (previous styles) ... */
 
@@ -88,3 +101,34 @@ button:hover {
   box-shadow: 2px 2px 4px #505050;
   background-color: #0C6496;
 }
+
+
+.Activities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 600px; /* Adjust the max-width as needed */
+  margin: 0 auto;
+}
+
+.ActivityBtn {
+  background-color: #EFEFEF;
+  border: none;
+  border-radius: 10px;
+  color: #666666;
+  font-size: 16px;
+  padding: 8px 12px;
+  margin: 5px;
+  cursor: not-allowed; /* Add cursor style to indicate it's not clickable */
+}
+
+/* Apply alternating border colors */
+.ActivityBtn:nth-child(odd) {
+  border: 2px solid black;
+}
+
+.ActivityBtn:nth-child(even) {
+  border: 2px solid orange;
+}
+
+
