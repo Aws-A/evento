@@ -27,7 +27,7 @@ const EventDetails = ({ event }) => {
       <p>{event.eventDescription}</p>
       <p>Date: {event.eventDate}</p>
       <p>Location: {event.eventLocation}</p>
-      <button onClick={handleJoinEvent}>Join Event</button>
+      <button class="joinEvent" onClick={handleJoinEvent}>Join Event</button>
     </div>
   );
 };
