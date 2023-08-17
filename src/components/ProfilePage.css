@@ -1,9 +1,26 @@
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /*align-items: flex-start;
+  */
+}
+
+.left-column,
+.right-column {
+  flex: 1;
+  padding: 20px;
+  width: auto;
+  /* Add any other styling you need */
+}
+
 .top {
   display: flex;
   justify-content: center;
 }
 
-.btn {
+.btn,
+.createEventBtn {
   margin-left: 3%;
   margin-top: 2%;
   margin-bottom: 2%;
@@ -21,33 +38,53 @@ button:hover {
   background-color: #0C6496;
 }
 
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 10px;
+}
+
 .ProfileEdits {
-  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
 }
-
-.ProfileEdits textarea {
-  width: 50%;
-  height: 150px;
-  border-radius: 10PX;
-  margin-top: 2%;
-  resize: none;
-}
-
 
 .ProfileEdits h1 {
   font-weight: bold;
   margin: 0;
+  margin-top: 10px;
 }
 
-.ProfileEdits h2 {
-  margin: 0;
+.ProfileEdits textarea {
+  width: 100%;
+  height: 100px;
+  border-radius: 10px;
+  margin-top: 5px;
+  resize: none;
 }
 
-.ProfileEdits > div {
-  flex: 1 0 200px;
-  margin: 10px;
+/* ... (previous styles) ... */
+
+.SaveChangesContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-.SV {
-  margin-bottom: 5%;
+.SaveChangesBtn {
+  background-color: #FF7557;
+  border: #FF7557;
+  border-radius: 10px;
+  color: #F5F5F5;
+  font-size: 22px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.SaveChangesBtn:hover {
+  box-shadow: 2px 2px 4px #505050;
+  background-color: #0C6496;
 }
