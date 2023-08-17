@@ -7,6 +7,9 @@ const ChosenEvent = ({event}) => {
   const [attendeesCount, setAttendeesCount] = useState(0);
   const [groupId, setGroupId] = useState(null);
   const [organizerId, setOrganizerId] = useState(null);
+  const [group, setGroup] = useState(null);
+  const [groupName, setGroupName] = useState(null)
+  const [groupDescription, setGroupDescription] =useState(null)
     console.log(event.eventid)
 
     useEffect(() => {
@@ -22,13 +25,31 @@ const ChosenEvent = ({event}) => {
         .get(`http://localhost:8080/events/${event.eventid}/organizer`)
         .then(response => {
           const { organizerId } = response.data;
-          setOrganizerId(organizerId); 
-          console.log (organizerId)
+          setOrganizerId(organizerId);
+          console.log(organizerId);
+  
+          if (organizerId) {
+            axios
+              .get(`http://localhost:8080/groups/${organizerId}/details`)
+              .then(groupResponse => {
+                const groupName = groupResponse.data.groupname;
+               const groupDescription = groupResponse.data.groupdescription;
+ 
+                console.log (groupName)
+                setGroup(groupResponse.data);
+                setGroupName(groupName)
+                setGroupDescription(groupDescription)
+               
+              })
+              .catch(error => {
+                console.error(`Error fetching group details for organizer ${organizerId}:`, error);
+              });
+          }
         })
         .catch(error => {
-          console.log (event.eventid)
+          console.log(event.eventid);
           console.error(`Error fetching organizerId for event ${event.eventid}:`, error);
-          console.error('Response data:', error.response.data); // Log the response data for debugging
+          console.error('Response data:', error.response.data);
         });
     }, [event.eventid]);
     
@@ -83,17 +104,15 @@ const ChosenEvent = ({event}) => {
           </div>
         </div>
 
-        {organizerId && ( // Check if organizerId exists
-          <div class="groupContent">
-            <img src="/images/beachGroup.jpg"/>
-            <h1>Toronto Volleyball Friends</h1>
-            <p> We organize volleyball events in Toronto: <br/>
-                Beach Volleyball <br/>
-                Indoor Volleyball <br/>
-                Grass Volleyball<br/>
-            </p>
-          </div>
-        )}
+        {organizerId && group && (
+  <div className="groupContent">
+    <img src="/images/beachGroup.jpg" alt="Group" />
+   
+    <h1>{groupName}</h1>
+    <p>{groupDescription}</p>
+
+  </div>
+)}
 
       </div>
     </>
