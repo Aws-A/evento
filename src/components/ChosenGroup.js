@@ -1,4 +1,5 @@
 import "./ChosenGroup.css";
+import {updateImageSrc} from "./ChangeImageSource.js";
 
 const ChosenGroup = ({selectedGroup}) => {
   // console.log (selectedGroup)
@@ -10,7 +11,7 @@ const ChosenGroup = ({selectedGroup}) => {
         <div class="groupContentGr">
           <div class="mainGroup">
             <div class="frontGr">
-              <img src="/images/dineGroup.jpg"/>
+              <img src={updateImageSrc(selectedGroup)}/>
               <div class="byImgGr">
               <h1>{selectedGroup.groupname}</h1>
               <h2>{selectedGroup.groupdescription}</h2>

@@ -1,26 +1,9 @@
-
 import "./groups.css"
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 import './EventsPage.css';
+import {updateImageSrc} from "./ChangeImageSource.js";
 
-function updateImageSrc(selectedGroup) {
-  if (selectedGroup.groupname === "Tech Enthusiasts") {
-    return "/images/techGr.jpg";
-  } else if (selectedGroup.groupname === "Hiking Club") {
-    return "/images/hikingGr.jpg";
-  } else if (selectedGroup.groupname === "Art Community") {
-    return "/images/artGr.jpg";
-  } else if (selectedGroup.groupname === "Coding Enthusiasts") {
-    return "/images/codingGr.jpg";
-  } else if (selectedGroup.groupname === "Nature Lovers") {
-    return "/images/natureGr.jpg";
-  } else if (selectedGroup.groupname === "Music Fans") {
-    return "/images/musicGr.jpg";
-  } else {
-    return "/images/beachVolleyball.jpg"
-  }
-}
 
 
 const GroupsPage = (props) => {

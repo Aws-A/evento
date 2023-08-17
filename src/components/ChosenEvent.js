@@ -2,6 +2,8 @@ import "./ChosenEvent.css";
 import EventDetails from "./JoinEventButton";
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import { updateImageSource } from "./ChangeImageSource.js";
+
 const ChosenEvent = ({event}) => {
  
   const [attendeesCount, setAttendeesCount] = useState(0);
@@ -64,7 +66,7 @@ const ChosenEvent = ({event}) => {
         <div class="eventContent">
           <div class="mainEvent">
             <div class="front">
-              <img src="/images/beachVolleyball.jpg"/>
+              <img src={updateImageSource(event)} />
               <div class="byImg">
                 <h1> {event.eventname} </h1>
                 <p> <b> {event.eventdescription} </b> </p>

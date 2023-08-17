@@ -1,25 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import './EventsPage.css';
-
-function updateImageSource(selectedEvent) {
-    if (selectedEvent.eventname === "Art Exhibition") {
-      return "/images/artEx.jpg";
-    } else if (selectedEvent.eventname === "Coding Workshop") {
-      return "/images/coding.jpg";
-    } else if (selectedEvent.eventname === "Hiking Adventure") {
-      return "/images/hiking.jpg";
-    } else if (selectedEvent.eventname === "Live Music Night") {
-      return "/images/liveMusic.jpg";
-    } else if (selectedEvent.eventname === "Nature Walk") {
-      return "/images/walk.jpg";
-    } else if (selectedEvent.eventname === "Tech Conference") {
-      return "/images/tech.jpg";
-    } else {
-      return "/images/beachVolleyball.jpg"
-    }
-}
-
+import { updateImageSource } from "./ChangeImageSource.js";
 
 const EventsPage= (props) => {
   const [eventSearchQuery, setEventSearchQuery] = useState("");
