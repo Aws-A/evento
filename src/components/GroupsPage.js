@@ -75,8 +75,8 @@ const GroupsPage = (props) => {
         <div></div>
       </div>
 
-       <button className="createEventBtn" onClick={handleCreateGroupClick}> 
-            Create Group
+       <button className="createEventBtn GroupsBtn" onClick={handleCreateGroupClick}> 
+            <p> Create Group </p>
           </button>
 
       <ul>
