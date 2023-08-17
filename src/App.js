@@ -58,9 +58,10 @@ export default function App() {
         {currentPage === 'groups' && <GroupsPage onHomeChange={handlePageChange}/>}
         {currentPage === 'contactUs' && <ContactUs/>}
         {/* {currentPage === 'chosenPage' && <ChosenEvent/>} */}
-        {currentPage === 'chosenPageGr' && selectedEvent && (
+        {currentPage === 'chosenPageGr' && selectedGroup && <ChosenGroup selectedGroup={selectedGroup}/>}
+        {/* {currentPage === 'chosenPageGr' && selectedEvent && (
   <ChosenGroup selectedGroup={selectedEvent} />
-)}
+)} */}
         {currentPage === 'createEvent' && <CreateEvent onHomeChange/>}
         {currentPage === 'createGroup' && <CreateGroup onHomeChange/>}
         {currentPage === 'chosenPage' && selectedEvent && (
