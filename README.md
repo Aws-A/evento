@@ -72,7 +72,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-
+###API
+Head to this link to access the repo for the api
+https://github.com/warduhh/MeetUpApp-api
 
 ### Database
 Create .env file inside the server folder and copy content from .env.example into .env
