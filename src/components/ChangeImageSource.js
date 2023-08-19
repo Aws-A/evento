@@ -33,7 +33,7 @@ export function updateImageSrc(selectedGroup) {
   } else if (selectedGroup.groupname === "Music Fans") {
     return "/images/musicGr.jpg";
   } else {
-    return "/images/defaultGroup.jpg";
+    return "/images/dineGroup.jpg";
   }
 }
 
@@ -41,17 +41,17 @@ export function updateImageSrcPhoto1(selectedGroup) {
   if (selectedGroup.groupname === "Tech Enthusiasts") {
     return "/images/memoTech1.jpg";
   } else if (selectedGroup.groupname === "Hiking Club") {
-    return "/images/hikingGr.jpg";
+    return "/images/memoHike1.jpg";
   } else if (selectedGroup.groupname === "Art Community") {
     return "/images/memoArt1.jpg";
   } else if (selectedGroup.groupname === "Coding Enthusiasts") {
-    return "/images/codingGr.jpg";
+    return "/images/memoCode1.jpg";
   } else if (selectedGroup.groupname === "Nature Lovers") {
-    return "/images/natureGr.jpg";
+    return "/images/memoNature1.jpg";
   } else if (selectedGroup.groupname === "Music Fans") {
-    return "/images/musicGr.jpg";
+    return "/images/memoMusic1.jpg";
   } else {
-    return "/images/defaultGroup.jpg";
+    return "/images/memo1.jpg";
   }
 }
 
@@ -59,17 +59,17 @@ export function updateImageSrcPhoto2(selectedGroup) {
   if (selectedGroup.groupname === "Tech Enthusiasts") {
     return "/images/memoTech2.jpg";
   } else if (selectedGroup.groupname === "Hiking Club") {
-    return "/images/hikingGr.jpg";
+    return "/images/memoHike2.jpg";
   } else if (selectedGroup.groupname === "Art Community") {
     return "/images/memoArt2.jpg";
   } else if (selectedGroup.groupname === "Coding Enthusiasts") {
-    return "/images/codingGr.jpg";
+    return "/images/memoCode2.jpg";
   } else if (selectedGroup.groupname === "Nature Lovers") {
-    return "/images/natureGr.jpg";
+    return "/images/memoNature2.jpg";
   } else if (selectedGroup.groupname === "Music Fans") {
-    return "/images/musicGr.jpg";
+    return "/images/memoMusic2.jpg";
   } else {
-    return "/images/defaultGroup.jpg";
+    return "/images/memo2.jpg";
   }
 }
 
@@ -77,17 +77,17 @@ export function updateImageSrcPhoto3(selectedGroup) {
   if (selectedGroup.groupname === "Tech Enthusiasts") {
     return "/images/memoTech3.jpg";
   } else if (selectedGroup.groupname === "Hiking Club") {
-    return "/images/hikingGr.jpg";
+    return "/images/memoHike3.jpg";
   } else if (selectedGroup.groupname === "Art Community") {
     return "/images/memoArt3.jpg";
   } else if (selectedGroup.groupname === "Coding Enthusiasts") {
-    return "/images/codingGr.jpg";
+    return "/images/memoCode3.jpg";
   } else if (selectedGroup.groupname === "Nature Lovers") {
-    return "/images/natureGr.jpg";
+    return "/images/memoNature3.jpg";
   } else if (selectedGroup.groupname === "Music Fans") {
-    return "/images/musicGr.jpg";
+    return "/images/memoMusic3.jpg";
   } else {
-    return "/images/defaultGroup.jpg";
+    return "/images/memo3.jpg";
   }
 }
 
@@ -95,17 +95,17 @@ export function updateImageSrcPhoto4(selectedGroup) {
   if (selectedGroup.groupname === "Tech Enthusiasts") {
     return "/images/memoTech4.jpg";
   } else if (selectedGroup.groupname === "Hiking Club") {
-    return "/images/hikingGr.jpg";
+    return "/images/memoHike4.jpg";
   } else if (selectedGroup.groupname === "Art Community") {
     return "/images/memoArt4.jpg";
   } else if (selectedGroup.groupname === "Coding Enthusiasts") {
-    return "/images/codingGr.jpg";
+    return "/images/memoCode4.jpg";
   } else if (selectedGroup.groupname === "Nature Lovers") {
-    return "/images/natureGr.jpg";
+    return "/images/memoNature4.jpg";
   } else if (selectedGroup.groupname === "Music Fans") {
-    return "/images/musicGr.jpg";
+    return "/images/memoMusic4.jpg";
   } else {
-    return "/images/defaultGroup.jpg";
+    return "/images/memo4.jpg";
   }
 }
 
@@ -113,17 +113,17 @@ export function updateImageSrcPhoto5(selectedGroup) {
   if (selectedGroup.groupname === "Tech Enthusiasts") {
     return "/images/memoTech5.jpg";
   } else if (selectedGroup.groupname === "Hiking Club") {
-    return "/images/hikingGr.jpg";
+    return "/images/memoHike5.jpg";
   } else if (selectedGroup.groupname === "Art Community") {
     return "/images/memoArt5.jpg";
   } else if (selectedGroup.groupname === "Coding Enthusiasts") {
-    return "/images/codingGr.jpg";
+    return "/images/memoCode5.jpg";
   } else if (selectedGroup.groupname === "Nature Lovers") {
-    return "/images/natureGr.jpg";
+    return "/images/memoNature5.jpg";
   } else if (selectedGroup.groupname === "Music Fans") {
-    return "/images/musicGr.jpg";
+    return "/images/memoMusic5.jpg";
   } else {
-    return "/images/defaultGroup.jpg";
+    return "/images/memo5.jpg";
   }
 }
 
@@ -131,17 +131,17 @@ export function updateImageSrcPhoto6(selectedGroup) {
   if (selectedGroup.groupname === "Tech Enthusiasts") {
     return "/images/memoTech6.jpg";
   } else if (selectedGroup.groupname === "Hiking Club") {
-    return "/images/hikingGr.jpg";
+    return "/images/memoHike6.jpg";
   } else if (selectedGroup.groupname === "Art Community") {
     return "/images/memoArt6.jpg";
   } else if (selectedGroup.groupname === "Coding Enthusiasts") {
-    return "/images/codingGr.jpg";
+    return "/images/memoCode6.jpg";
   } else if (selectedGroup.groupname === "Nature Lovers") {
-    return "/images/natureGr.jpg";
+    return "/images/memoNature6.jpg";
   } else if (selectedGroup.groupname === "Music Fans") {
-    return "/images/musicGr.jpg";
+    return "/images/memoMusic6.jpg";
   } else {
-    return "/images/defaultGroup.jpg";
+    return "/images/memo6.jpg";
   }
 }
 
@@ -149,17 +149,17 @@ export function updateImageSrcRightPhoto1(selectedGroup) {
   if (selectedGroup.groupname === "Tech Enthusiasts") {
     return "/images/rightTech1.jpg";
   } else if (selectedGroup.groupname === "Hiking Club") {
-    return "/images/hikingGr.jpg";
+    return "/images/rightHike1.jpg";
   } else if (selectedGroup.groupname === "Art Community") {
     return "/images/rightArt1.jpg";
   } else if (selectedGroup.groupname === "Coding Enthusiasts") {
-    return "/images/codingGr.jpg";
+    return "/images/rightCode1.jpg";
   } else if (selectedGroup.groupname === "Nature Lovers") {
-    return "/images/natureGr.jpg";
+    return "/images/rightNature1.jpg";
   } else if (selectedGroup.groupname === "Music Fans") {
-    return "/images/musicGr.jpg";
+    return "/images/rightMusic1.jpg";
   } else {
-    return "/images/defaultGroup.jpg";
+    return "/images/dineEvent1.jpg";
   }
 }
 
@@ -167,17 +167,17 @@ export function updateImageSrcRightPhoto2(selectedGroup) {
   if (selectedGroup.groupname === "Tech Enthusiasts") {
     return "/images/rightTech2.jpg";
   } else if (selectedGroup.groupname === "Hiking Club") {
-    return "/images/hikingGr.jpg";
+    return "/images/rightHike2.jpg";
   } else if (selectedGroup.groupname === "Art Community") {
     return "/images/rightArt2.jpg";
   } else if (selectedGroup.groupname === "Coding Enthusiasts") {
-    return "/images/codingGr.jpg";
+    return "/images/rightCode2.jpg";
   } else if (selectedGroup.groupname === "Nature Lovers") {
-    return "/images/natureGr.jpg";
+    return "/images/rightNature2.jpg";
   } else if (selectedGroup.groupname === "Music Fans") {
-    return "/images/musicGr.jpg";
+    return "/images/rightMusic2.jpg";
   } else {
-    return "/images/defaultGroup.jpg";
+    return "/images/dineEvent2.jpg";
   }
 }
 
