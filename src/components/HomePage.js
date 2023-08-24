@@ -26,6 +26,16 @@ const HomePage = ({onHomeChange}) => {
         </div>
         <img src="/images/heroImg.jpg"/>
       </div>
+      <div className="animation">
+        <img className="gif" src="/images/eventoWelcome.gif" />
+      </div>
+      <div className="purpose">
+        <ul>We have chosen this project as achieving interests could reflects on :
+          <li> - Achieving goals</li>
+          <li> - Filling self-satisfication</li>
+          <li> - Socializing with people who have same interests</li>
+        </ul> 
+      </div>
       <h1 class="title">Explore</h1>
       <div className="eventPageCategory">
           <div className ="card eventsButton">
@@ -56,7 +66,13 @@ const HomePage = ({onHomeChange}) => {
           <h1>Communications</h1>
         </div>
       </div>
-  
+      <hr className="topLine" />
+      <div className="feedback">
+        <p> "If you would like to give us a feedback about what do you like  about <br />
+        this project and/or any suggestion to be added, please feel <br />
+        free to reach us by emails, we'd appreciate it "</p>
+      </div>
+      <hr className="bottomLine" />
 
       {currentPage === "explore" && <EventsPage />}
       {currentPage === "groups" && <GroupsPage />}

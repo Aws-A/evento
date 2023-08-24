@@ -36,8 +36,8 @@ const CreateEvent = () => {
   return (
     <div>
       <h1 className="titlePage">Organize Event</h1>
-
-      <div className="creaeSection">
+      <div className="createSection">
+      <img className="createImgs createGroup" src="/images/organizeEvent.svg"/>
       <input
         className="organize"
         type="text"

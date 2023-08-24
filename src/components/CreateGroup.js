@@ -32,7 +32,8 @@ const CreateGroup = () => {
   return (
     <div>
       <h1 className="titlePage">Organize Group</h1>
-      <div className="creaeSection">
+      <div className="createSection">
+      <img className="createImgs createGroup" src="/images/createGroup.svg"/>
       <input
         className="organize"
         type="text"

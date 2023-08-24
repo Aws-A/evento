@@ -1,6 +1,8 @@
-.creaeSection {
+.createSection {
+  justify-content: center;
   display: inline-grid;
-  margin-bottom: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .organizeText{
@@ -37,4 +39,13 @@
   padding: 8px; /* Add some padding for better appearance */
   color: #EFEFEF; /* Set the text color */
   border: 1px solid #FF7557; 
+}
+
+.createImgs {
+  width: 80%;
+  height: 80%;
+}
+
+.createGroup {
+  margin-left: 12%;
 }

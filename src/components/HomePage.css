@@ -20,6 +20,10 @@
  margin: 2% 2% 10% 5%;
 }
 
+.gif {
+  width: 50%;
+}
+
 .card {
   height: 200px;
   width: 295px;
@@ -54,7 +58,7 @@
   display: flex;
   font-size: 25px;
   border-bottom: solid 3px #FF7557;
-  margin-bottom: 10%;
+  margin-bottom: 3%;
 }
 
 .para {
@@ -84,4 +88,43 @@
 .eventSearch {
   display: flex;
   margin-left: 20px;;
+}
+
+.purpose {
+  padding: 1%;
+  height: 200px;
+  background-color: #fef9f8;
+  margin-bottom: 7%;
+}
+
+.purpose ul{
+  color: #FF7557;
+  font-weight: 900;
+  font-size: 22px;
+  text-align: left;
+  margin-left: 8%;
+}
+
+.feedback {
+  padding: 1%;
+  height: 200px;
+  background-color: #ffffff;
+}
+
+.feedback p{
+  color: #6f6e6e;
+  font-weight: 900;
+  font-size: 22px;
+}
+
+.topLine {
+  border-top: 2px solid #FF7557;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.bottomLine {
+  border-top: 2px solid #FF7557;
+  width: 40%;
+  margin-left: 29%;
 }
