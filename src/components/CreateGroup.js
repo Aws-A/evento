@@ -31,7 +31,7 @@ const CreateGroup = () => {
 
   return (
     <div>
-      <h1 className="titlePage">Organize Group</h1>
+      <h1 className="pageTitle">Organize Group</h1>
       <div className="createSection">
       <img className="createImgs createGroup" src="/images/createGroup.svg"/>
       <input
