@@ -119,3 +119,14 @@ Granting access to user( GRANT ALL PRIVILEGES ON DATABASE meetuppapp TO labber;)
 #### Organize Event
 ![Organize Event](public/images/Sc-OrganizeEvent1.png)
 ![Organize Event](public/images/Sc-OrganizeEvent2.png)
+
+#### Profile
+![Profile](public/images/Sc-Profile.png)
+
+#### Communication
+![Communications](public/images/Sc-Communications1.png)
+![Communications](public/images/Sc-Communications2.png)
+
+#### Contact Us
+![Contact Us](public/images/Sc-Contactus1.png)
+![Contact Us](public/images/Sc-Contactus2.png)
