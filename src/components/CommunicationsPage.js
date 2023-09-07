@@ -4,7 +4,7 @@ const CommunicationsPage = () => {
 
   return (
     <>
-    <h1 className="ProfileTitle">Communication</h1>
+    <h1 className="pageTitle">Communication</h1>
     <div class="com">
         <img src="/images/person1.png" class="prImage"/>
         <div class="comTxt">
