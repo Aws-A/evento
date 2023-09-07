@@ -91,3 +91,7 @@ Go into psql
 Create a db ( CREATE DATABASE meetupapp; )
 Creat user ( CREATE USER labber WITH ENCRYPTED PASSWORD ‘labber’; )
 Granting access to user( GRANT ALL PRIVILEGES ON DATABASE meetuppapp TO labber;)
+
+### Evento Project Photos
+
+![Image Name](Image URL)
