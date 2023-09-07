@@ -94,4 +94,7 @@ Granting access to user( GRANT ALL PRIVILEGES ON DATABASE meetuppapp TO labber;)
 
 ### Evento Project Photos
 
-![Image Name](Image URL)
+![Home Page Header](public/images/Sc-HomePage1.png)
+![Home Page Body](public/images/Sc-HomePage2.png)
+![Home Page Options](public/images/Sc-HomePage3.png)
+![Home Page Options](public/images/Sc-HomePage4.png)
