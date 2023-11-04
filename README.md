@@ -128,5 +128,5 @@ Granting access to user( GRANT ALL PRIVILEGES ON DATABASE meetuppapp TO labber;)
 ![Communications](public/images/Sc-Communications2.png)
 
 #### Contact Us
-![Contact Us](public/images/Sc-Contactus1.png)
-![Contact Us](public/images/Sc-Contactus2.png)
+![Contact Us](public/images/Sc-ContactUs1.png)
+![Contact Us](public/images/Sc-ContactUs2.png)
