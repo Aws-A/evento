@@ -91,3 +91,42 @@ Go into psql
 Create a db ( CREATE DATABASE meetupapp; )
 Creat user ( CREATE USER labber WITH ENCRYPTED PASSWORD ‘labber’; )
 Granting access to user( GRANT ALL PRIVILEGES ON DATABASE meetuppapp TO labber;)
+
+### Evento Project Photos
+
+#### Evento Home Page
+
+![Home Page Header](public/images/Sc-HomePage1.png)
+![Home Page Body](public/images/Sc-HomePage2.png)
+![Home Page Options](public/images/Sc-HomePage3.png)
+![Home Page Footer](public/images/Sc-Footer.png)
+
+#### Evento Events
+![Events Page](public/images/Sc-Events.png)
+
+#### Evento Groups
+![Groups Page](public/images/Sc-Groups.png)
+
+#### Chosen Event
+![Hiking Adventure Event](public/images/Sc-ChosenEvent.png)
+
+#### Chosen Group
+![Foodies Group](public/images/Sc-ChosenGroup.png)
+
+#### Create Group
+![Create Group](public/images/Sc-CreateGroup.png)
+
+#### Organize Event
+![Organize Event](public/images/Sc-OrganizeEvent1.png)
+![Organize Event](public/images/Sc-OrganizeEvent2.png)
+
+#### Profile
+![Profile](public/images/Sc-Profile.png)
+
+#### Communication
+![Communications](public/images/Sc-Communications1.png)
+![Communications](public/images/Sc-Communications2.png)
+
+#### Contact Us
+![Contact Us](public/images/Sc-ContactUs1.png)
+![Contact Us](public/images/Sc-ContactUs2.png)
